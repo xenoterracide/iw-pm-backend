@@ -8,9 +8,6 @@ jobs:
   api:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    defaults:
-      run:
-        working-directory: api
     steps:
       - uses: actions/checkout@v2
       - uses: actions/cache@v2
