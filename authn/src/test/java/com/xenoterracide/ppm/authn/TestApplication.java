@@ -1,4 +1,4 @@
-/* Copyright © 2020 Caleb Cushing. All rights reserved */
+/* Copyright © 2020-2021 Caleb Cushing. All rights reserved */
 package com.xenoterracide.ppm.authn;
 
 import org.springframework.boot.SpringApplication;
@@ -12,7 +12,7 @@ public class TestApplication {
 
   // CHECKSTYLE:ON
 
-  public static void main(String[] args) {
-    SpringApplication.run(TestApplication.class, args);
+  public static void main( String[] args ) {
+    SpringApplication.run( TestApplication.class, args );
   }
 }

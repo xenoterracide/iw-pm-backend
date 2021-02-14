@@ -1,4 +1,4 @@
-/* Copyright © 2020 Caleb Cushing. All rights reserved */
+/* Copyright © 2020-2021 Caleb Cushing. All rights reserved */
 package com.xenoterracide.ppm;
 
 import org.springframework.boot.SpringApplication;
@@ -10,7 +10,7 @@ public class Application {
 
   // CHECKSTYLE:ON
 
-  public static void main(String[] args) {
-    SpringApplication.run(Application.class, args);
+  public static void main( String[] args ) {
+    SpringApplication.run( Application.class, args );
   }
 }

@@ -6,10 +6,11 @@ plugins {
   `java-library`
   id("net.ltgt.errorprone")
   id("net.ltgt.nullaway")
+  id("org.checkerframework")
 }
 
 dependencies {
-  errorprone("com.google.errorprone:error_prone_core:2.4.+")
+  errorprone("com.google.errorprone:error_prone_core:2.5.+")
   errorprone("com.uber.nullaway:nullaway:0.8.+")
 }
 
@@ -21,6 +22,16 @@ java {
 
 nullaway {
   annotatedPackages.add("com.xenoterracide")
+}
+
+checkerFramework {
+  excludeTests = true
+  extraJavacArgs.addAll(listOf("-Astubs=$buildDir/../config/stubs"))
+  checkers.addAll(
+    listOf(
+      "org.checkerframework.checker.nullness.NullnessChecker"
+    )
+  )
 }
 
 tasks.withType<JavaCompile>().configureEach {
@@ -174,7 +185,6 @@ tasks.withType<JavaCompile>().configureEach {
       "IterablePathParameter",
       "LongLiteralLowerCaseSuffix",
       "NumericEquality",
-      "ParameterPackage",
       "StaticQualifiedUsingExpression",
       "AnnotationPosition",
       "AssertFalse",
@@ -199,7 +209,6 @@ tasks.withType<JavaCompile>().configureEach {
       "MultipleTopLevelClasses",
       "PackageLocation",
       "RemoveUnusedImports",
-      "ParameterNotNullable",
       "Var",
       "WildcardImport"
     )

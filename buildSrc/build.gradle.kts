@@ -19,5 +19,7 @@ dependencies {
   implementation("net.ltgt.gradle:gradle-errorprone-plugin:1.3.0")
   implementation("net.ltgt.gradle:gradle-nullaway-plugin:1.0.2")
   implementation("org.springframework.boot:spring-boot-gradle-plugin:2.4.0")
+  implementation("org.checkerframework:checkerframework-gradle-plugin:0.5.16")
+
 }
 

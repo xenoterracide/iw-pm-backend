@@ -66,15 +66,20 @@ tasks.test {
   }
 }
 
-
-
-
 tasks.withType<Checkstyle>().configureEach {
   isShowViolations = true
   reports {
     html.isEnabled = false
     xml.isEnabled = false
   }
+}
+
+tasks.named<Checkstyle>("checkstyleMain") {
+  configFile = file("config/checkstyle/main.xml")
+}
+
+tasks.named<Checkstyle>("checkstyleTest") {
+  configFile = file("config/checkstyle/test.xml")
 }
 
 spotbugs {

@@ -1,4 +1,4 @@
-/* Copyright © 2020 Caleb Cushing. All rights reserved */
+/* Copyright © 2020-2021 Caleb Cushing. All rights reserved */
 package com.xenoterracide.ppm.authn;
 
 import org.apache.logging.log4j.LogManager;
@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 class OIDCTestController {
 
-  private final Logger log = LogManager.getLogger(this.getClass());
+  private final Logger log = LogManager.getLogger( this.getClass() );
 
   @GetMapping
   @NonNull
-  String index(@Nullable Authentication details) {
-    log.info("{}", details);
+  String index( @Nullable Authentication details ) {
+    log.info( "{}", details );
     var name = details != null ? details.getName() : "world";
     return "Hello, " + name;
   }

@@ -1,4 +1,4 @@
-/* Copyright © 2020 Caleb Cushing. All rights reserved */
+/* Copyright © 2020-2021 Caleb Cushing. All rights reserved */
 package com.xenoterracide.ppm;
 
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,7 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 class ApplicationTest {
 
   @Test
-  void healthCheck(@Autowired WebTestClient webClient) {
-    webClient.get().uri("/actuator/health").exchange().expectStatus().isOk();
+  void healthCheck( @Autowired WebTestClient webClient ) {
+    webClient.get().uri( "/actuator/health" ).exchange().expectStatus().isOk();
   }
 }
