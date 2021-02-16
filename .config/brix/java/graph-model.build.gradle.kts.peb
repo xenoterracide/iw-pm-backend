@@ -1,0 +1,10 @@
+plugins {
+  id("ppm.java-convention")
+  id("ppm.bom")
+}
+
+dependencies {
+    annotationProcessor("org.immutables:value")
+    implementation("org.immutables:value")
+    implementation("org.springframework.data:spring-data-neo4j")
+}

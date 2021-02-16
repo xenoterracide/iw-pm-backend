@@ -1,0 +1,6 @@
+templates:
+  TestApplication.java:
+    source: TestApplication.java.peb
+    destination: '{{name}}/{{type}}/src/test/java/com/xenoterracide/TestApplication.java'
+    context:
+      type: 'graph-db-changeset'
