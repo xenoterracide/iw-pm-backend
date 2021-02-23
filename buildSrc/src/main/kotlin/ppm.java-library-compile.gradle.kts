@@ -10,8 +10,13 @@ plugins {
 }
 
 dependencies {
-  errorprone("com.google.errorprone:error_prone_core:2.5.+")
+  errorprone("com.google.errorprone:error_prone_core:2.+")
   errorprone("com.uber.nullaway:nullaway:0.8.+")
+  compileOnly("com.google.errorprone:error_prone_annotations:2.+")
+
+  compileOnly("org.checkerframework:checker-qual:3.+")
+  testCompileOnly("org.checkerframework:checker-qual:3.+")
+  checkerFramework("org.checkerframework:checker:3.+")
 }
 
 java {
