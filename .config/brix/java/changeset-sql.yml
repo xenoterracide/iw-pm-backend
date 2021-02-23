@@ -1,0 +1,5 @@
+templates:
+  build.gradle.kts:
+    source: changeset-sql.build.gradle.kts
+    destination: {{name}}/{{type}}/build.gradle.kts
+

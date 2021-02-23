@@ -4,7 +4,7 @@ plugins {
 }
 
 dependencies {
-    annotationProcessor("org.immutables:value")
-    implementation("org.immutables:value")
-    implementation("org.springframework.data:spring-data-jpa")
+  annotationProcessor("org.immutables:value")
+  implementation("org.immutables:value")
+  implementation("org.springframework.data:spring-data-jpa")
 }

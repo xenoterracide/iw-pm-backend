@@ -1,6 +1,7 @@
 templates:
   TestApplication.java:
     source: TestApplication.java.peb
-    destination: '{{name}}/{{type}}/src/test/java/com/xenoterracide/TestApplication.java'
-    context:
-  build.gradle.kts
+    destination: {{name}}/{{type}}/src/test/java/com/xenoterracide/TestApplication.java
+  build.gradle.kts:
+    source: graph-model.build.gradle.kts
+    destination: {{name}}/{{type}}/build.gradle.kts
