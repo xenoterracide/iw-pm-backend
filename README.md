@@ -26,9 +26,13 @@ classDiagram
         -String foreignUserId
     }
 
+    class Profile {
+    }
+
     class User {
     }
 
-    User <|-- Identifiable
+    User --|> Identifiable
     User *--> AuthnIdentity
+    User *--> Profile
 ```
