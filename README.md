@@ -30,5 +30,5 @@ classDiagram
     }
 
     User <|-- Identifiable
-    User 1*-->1 AuthnIdentity
+    User *--> AuthnIdentity
 ```
