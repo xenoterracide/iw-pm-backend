@@ -40,6 +40,14 @@ checkerFramework {
 }
 
 tasks.withType<JavaCompile>().configureEach {
+  options.compilerArgs.addAll(
+    listOf(
+      "-parameters",
+//    "-Werror",
+      "-Xlint:deprecation",
+      "-Xlint:unchecked"
+    )
+  )
   options.errorprone {
     nullaway {
       severity.set(CheckSeverity.ERROR)
@@ -47,6 +55,8 @@ tasks.withType<JavaCompile>().configureEach {
       handleTestAssertionLibraries.set(true)
     }
     disableWarningsInGeneratedCode.set(true)
+    excludedPaths.set("$buildDir/generated/sources/.*")
+
     error(
       "AmbiguousMethodReference",
       "ArgumentSelectionDefectChecker",

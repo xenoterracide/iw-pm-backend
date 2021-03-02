@@ -1,6 +1,7 @@
 import com.github.spotbugs.snom.Confidence
 import com.github.spotbugs.snom.Effort
 import com.github.spotbugs.snom.SpotBugsTask
+import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.gradle.api.tasks.testing.logging.TestLogEvent
 
 group = "com.xenoterracide"
@@ -55,7 +56,10 @@ tasks.test {
 
   testLogging {
     lifecycle {
+      showExceptions = true
+      showStackTraces = true
       showStandardStreams = true
+      exceptionFormat = TestExceptionFormat.FULL
       displayGranularity = 2
       events.addAll(listOf(TestLogEvent.STARTED, TestLogEvent.PASSED, TestLogEvent.SKIPPED, TestLogEvent.FAILED))
     }

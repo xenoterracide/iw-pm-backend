@@ -110,6 +110,7 @@
       <property name="sortStaticImportsAlphabetically" value="true"/>
     </module>
     <module name="AvoidStarImport"/>
+    <module name="AvoidStaticImport"/>
     <module name="IllegalImport"/>
     <module name="NoLineWrap"/>
     <module name="SuppressionCommentFilter"/>
@@ -212,11 +213,6 @@
     <module name="NoWhitespaceBefore"/>
     <module name="ArrayTypeStyle"/>
     <module name="CommentsIndentation"/>
-    <module name="Indentation">
-      <property name="basicOffset" value="2"/>
-      <property name="lineWrappingIndentation" value="2"/>
-      <property name="throwsIndent" value="2"/>
-    </module>
     <module name="AvoidEscapedUnicodeCharacters">
       <property name="allowNonPrintableEscapes" value="true"/>
       <property name="allowByTailComment" value="true"/>
@@ -289,7 +285,9 @@
 
     <!-- Checks for blocks. You know, those {}'s         -->
     <!-- See https://checkstyle.org/config_blocks.html -->
-    <module name="AvoidNestedBlocks"/>
+    <module name="AvoidNestedBlocks">
+      <property name="allowInSwitchCase" value="true"/>
+    </module>
     <module name="EmptyBlock"/>
     <module name="LeftCurly"/>
     <module name="NeedBraces"/>
@@ -313,13 +311,15 @@
     <module name="IllegalToken"/>
     <module name="IllegalType"/>
     <module name="InnerAssignment"/>
-    <module name="MagicNumber"/>
+    <!-- error prone has got this
     <module name="MissingSwitchDefault"/>
+    -->
     <module name="MultipleVariableDeclarations"/>
     <module name="SimplifyBooleanExpression"/>
     <module name="SimplifyBooleanReturn"/>
     <module name="InnerTypeLast"/>
     <module name="ModifiedControlVariable"/>
+    <module name="MultipleStringLiterals"/>
     <module name="NestedForDepth"/>
     <module name="NestedIfDepth"/>
     <module name="NestedTryDepth"/>
@@ -343,6 +343,13 @@
     <module name="ArrayTypeStyle"/>
     <module name="TodoComment"/>
     <module name="UpperEll"/>
+    <module name="Indentation">
+      <property name="basicOffset" value="2"/>
+      <property name="lineWrappingIndentation" value="2"/>
+      <property name="throwsIndent" value="2"/>
+      <property name="caseIndent" value="2"/>
+      <property name="forceStrictCondition" value="true"/>
+    </module>
 
     <!-- https://checkstyle.org/config_filters.html#SuppressionXpathFilter -->
     <module name="SuppressionXpathFilter">
