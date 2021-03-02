@@ -1,29 +1,34 @@
-# Build
+# Installation
+## Code
 
 build and run tests.
 ```shell
 ./gradlew build
 ```
+## Browser
+### Mermaid
+
+Install the chrome extension for
+[Mermaid](https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil)
+to view documentation correctly.
 
 # Domain Model
 ## User
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
-```mermaid
 classDiagram
     class Identifiable {
         <<interface>>
-        +UUID getId()
+        +UUID getId();
     }
 
     class AuthnIdentity {
-        -String userId;
+        -String foreignUserId
     }
+
+    class User {
+    }
+
+    User <|-- Identifiable
+    User 1*-->1 AuthnIdentity
 ```
