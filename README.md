@@ -41,4 +41,4 @@ classDiagram
     User          *--> Profile
 ```
 
-![User Model](https://yuml.me/xenoterracide/b0547734.svg)
+![User Model](https://yuml.me/xenoterracide/user-model.svg)
