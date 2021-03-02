@@ -40,3 +40,5 @@ classDiagram
     User          *--> AuthnIdentity
     User          *--> Profile
 ```
+
+![User Model](https://yuml.me/xenoterracide/b0547734.svg)
