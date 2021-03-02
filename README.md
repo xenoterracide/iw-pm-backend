@@ -20,9 +20,10 @@ graph TD;
 classDiagram
     class Identifiable {
         <<interface>>
-        +getId()
+        +UUID getId()
     }
 
     class AuthnIdentity {
+        -String userId;
     }
 ```
