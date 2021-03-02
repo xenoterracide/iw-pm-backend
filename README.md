@@ -16,6 +16,7 @@ graph TD;
     C-->D;
 ```
 
+```mermaid
 classDiagram
   Animal <|-- Duck
   Animal <|-- Fish
@@ -37,4 +38,4 @@ classDiagram
       +bool is_wild
       +run()
   }
-
+```
