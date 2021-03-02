@@ -22,6 +22,9 @@ classDiagram
         +UUID getId();
     }
 
+    class JPAEntityBase {
+    }
+
     class AuthnIdentity {
         -String foreignUserId
     }
@@ -32,7 +35,8 @@ classDiagram
     class User {
     }
 
-    User --|> Identifiable
-    User *--> AuthnIdentity
-    User *--> Profile
+    JPAEntityBase --|> Identifiable
+    User          --|> JPAEntityBase
+    User          *--> AuthnIdentity
+    User          *--> Profile
 ```
