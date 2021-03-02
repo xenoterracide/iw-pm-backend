@@ -9,8 +9,8 @@ build and run tests.
 ## User
 
 classDiagram
-    class Identifiable {
-        <<interface>>
-        getId()
-    }
+class Identifiable {
+    <<interface>>
+    getId()
+}
 
