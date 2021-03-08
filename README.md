@@ -8,7 +8,7 @@ build and run tests.
 ./gradlew build
 ```
 
-# Documentation
+# Requirements
 
 ## Domain Model
 
