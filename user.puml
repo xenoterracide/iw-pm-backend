@@ -1,6 +1,4 @@
 @startuml
-skinparam monochrome true
-
 interface Identifiable {
    +getId() : UUID
 }
