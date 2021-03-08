@@ -29,3 +29,4 @@ jobs:
           commit_message: 'Generate SVG images for PlantUML diagrams'
           file_pattern: '*.svg'
           branch: ${{ steps.branch.outputs.name }}
+          commit_author: ${{ github.commit_user_name }} <${{ github.commit_user_email }}>
