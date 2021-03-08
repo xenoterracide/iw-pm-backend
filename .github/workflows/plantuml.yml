@@ -15,10 +15,8 @@ jobs:
       - name: UML files considered echo output
         run: |
           echo ${{ steps.getfile.outputs.files }}
-      - name: Generate SVG Diagrams
-        uses: cloudbees/plantuml-github-action@master
-        with:
-          args: -v -tsvg ${{ steps.getfile.outputs.files }}
+      - run: curl https://sourceforge.net/projects/plantuml/files/plantuml.jar/download > plantuml.jar
+      - run: java -jar plantuml.jar -v -tsvg ${{ steps.getfile.outputs.files }}
       - uses: EndBug/add-and-commit@v7
         with:
           message: 'generate SVG for PlantUML'
