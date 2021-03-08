@@ -2,7 +2,6 @@ name: PlantUML
 on:
   push:
     paths:
-      - '**'
       - '**.puml'
 jobs:
   plantuml:
