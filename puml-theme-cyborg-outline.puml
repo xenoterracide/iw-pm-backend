@@ -29,21 +29,21 @@ skinparam backgroundColor $BGCOLOR
 !$WHITE = "#FFF"
 !$GRAY_LIGHT = "#222"
 !$GRAY = "#555"
-!$PRIMARY = "#2A9FD6"
+!$PRIMARY = "#33beff"
 !$SECONDARY = "#555"
 !$SUCCESS = "#77B300"
 !$INFO = "#9933CC"
 !$WARNING = "#FF8800"
 !$DANGER = "#CC0000"
 !$LIGHT = "#222"
-!$DARK = "#ADAFAE"
+!$DARK = "#4b4d4c"
 
 '' *_DARK = tint (lighter) of the main color of 80%
 ''          where TINT is calculated by clr + (255-clr) * tint_factor
 '' *_LIGHT = shade (darker) of the main color of 80%
 ''          and SHADE is calculated by clr * (1 - shade_factor)
 ''
-!$FGCOLOR = $WHITE
+!$FGCOLOR = $GRAY
 !$PRIMARY_DARK = "#55B2DE"
 !$PRIMARY_LIGHT = "#227FAB"
 !$PRIMARY_TEXT = $PRIMARY
@@ -61,7 +61,7 @@ skinparam backgroundColor $BGCOLOR
 !$WARNING_TEXT = $WARNING
 !$DANGER_DARK = "#D63333"
 !$DANGER_LIGHT = "#a30000"
-!$DANGER_TEXT = $WHITE
+!$DANGER_TEXT = $GRAY
 !$DARK_DARK = "#BDBFBE"
 !$DARK_LIGHT = "#8A8C8B"
 !$LIGHT_DARK = "#4E4E4E"
