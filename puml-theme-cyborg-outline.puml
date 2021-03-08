@@ -43,7 +43,7 @@ skinparam backgroundColor $BGCOLOR
 '' *_LIGHT = shade (darker) of the main color of 80%
 ''          and SHADE is calculated by clr * (1 - shade_factor)
 ''
-!$FGCOLOR = $GRAY
+!$FGCOLOR = "#227FAB"
 !$PRIMARY_DARK = "#55B2DE"
 !$PRIMARY_LIGHT = "#227FAB"
 !$PRIMARY_TEXT = $PRIMARY
@@ -169,6 +169,7 @@ skinparam arrow {
 	Thickness 3
 	Color $PRIMARY
 	FontColor $FGCOLOR
+	BackgroundColor $DARK
 }
 !endsub
 
