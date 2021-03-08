@@ -43,7 +43,7 @@ skinparam backgroundColor $BGCOLOR
 '' *_LIGHT = shade (darker) of the main color of 80%
 ''          and SHADE is calculated by clr * (1 - shade_factor)
 ''
-!$FGCOLOR = "#227FAB"
+!$FGCOLOR = "MediumSlateBlue"
 !$PRIMARY_DARK = "#55B2DE"
 !$PRIMARY_LIGHT = "#227FAB"
 !$PRIMARY_TEXT = $PRIMARY
