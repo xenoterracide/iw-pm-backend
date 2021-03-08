@@ -24,9 +24,7 @@ jobs:
         run: |
           BRANCH=$(echo $GITHUB_REF | cut --delimiter / --fields '3-')
           echo "::set-output name=name::$BRANCH"
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: EndBug/add-and-commit@v7
         with:
-          commit_message: 'Generate SVG images for PlantUML diagrams'
-          file_pattern: '*.svg'
-          branch: ${{ steps.branch.outputs.name }}
-          commit_author: ${{ github.commit_user_name }} <${{ github.commit_user_email }}>
+          message: 'generate SVG for PlantUML'
+          add: '*.svg'
