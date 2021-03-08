@@ -7,6 +7,9 @@ on:
       - '**.java'
       - '**.kts'
       - '**.properties'
+      - '**.xml'
+      - '**.lockfile'
+      - '**.graphql'
   create:
 jobs:
   build:
