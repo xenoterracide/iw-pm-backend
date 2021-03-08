@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         with:
-          fetch-depth: 0
+          ref: ${{ github.head_ref }}
       - name: Get changed UML files
         id: getfile
         run: |
@@ -25,4 +25,3 @@ jobs:
         with:
           commit_message: 'Generate SVG images for PlantUML diagrams'
           file_pattern: '*.svg'
-          branch: ${{ github.head_ref }}
