@@ -1,8 +1,6 @@
 name: PlantUML
 on:
   push:
-    tags-ignore:
-      - '**'
     paths:
       - '**.puml'
 jobs:
