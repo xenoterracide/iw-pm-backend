@@ -1,8 +1,8 @@
 name: PlantUML
 on:
   push:
-#    paths:
-#      - '**.puml'
+    paths:
+      - '**.puml'
 jobs:
   plantuml:
     runs-on: ubuntu-latest
