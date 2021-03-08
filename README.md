@@ -43,31 +43,5 @@ classDiagram
 
 ![User Model](https://yuml.me/xenoterracide/user-model.svg)
 
-```
-@startuml
-skinparam monochrome true
-
-interface Identifiable {
-   +getId() : UUID
-}
-
-abstract JPAEntityBase
-@enduml
-```
-
-```plantuml:user-model
-@startuml
-class AuthnIdentity {
-    -foreignUserId: UUID
-}
-
-JPAEntityBase -|> Identifiable
-User -|> JPAEntityBase
-
-User "1" *--> "1" AuthnIdentity
-User "1" *--> "1" Settings
-@enduml
-```
-
-![](./user-model.svg)
+![rendering of ./user.puml](./user.svg)
 

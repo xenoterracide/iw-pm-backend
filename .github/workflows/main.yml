@@ -20,12 +20,3 @@ jobs:
             ${{ runner.os }}-gradle-
       - run: ./gradlew --version
       - run: ./gradlew build
-  plantuml:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-        with:
-          fetch-depth: 1
-      - uses: grassedge/generate-plantuml-action@v1.5
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
