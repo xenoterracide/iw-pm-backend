@@ -15,7 +15,7 @@ jobs:
       - name: UML files considered echo output
         run: |
           echo ${{ steps.getfile.outputs.files }}
-      - run: curl https://sourceforge.net/projects/plantuml/files/plantuml.jar/download > plantuml.jar
+      - run: wget --no-verbose https://downloads.sourceforge.net/project/plantuml/plantuml.jar
       - run: java -jar plantuml.jar -v -tsvg ${{ steps.getfile.outputs.files }}
       - uses: EndBug/add-and-commit@v7
         with:
