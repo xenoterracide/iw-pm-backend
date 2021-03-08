@@ -1,5 +1,6 @@
 @startuml
-!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cyborg-outline/puml-theme-cyborg-outline.puml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/superhero-outline/puml-theme-superhero-outline.puml
+
 
 interface Identifiable {
    +getId() : UUID
