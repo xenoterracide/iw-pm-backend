@@ -6,8 +6,8 @@ class User--><rect fill="#FFFFFF" height="52.0508" id="User" rx="4.1667" ry="4.1
 class Settings--><rect fill="#FFFFFF" height="52.0508" id="Settings" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="95.8333" x="197.3958" y="157.8125"/><rect fill="#227FAB" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="95.8333" x="197.3958" y="157.8125"/><rect fill="#227FAB" height="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="95.8333" x="197.3958" y="189.0299"/><rect fill="none" height="52.0508" id="Settings" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="95.8333" x="197.3958" y="157.8125"/><ellipse cx="211.9792" cy="175.5046" fill="#777777" rx="10.4167" ry="10.4167" style="stroke:#444444;stroke-width:1.0416666666666667;"/><path d="M213.8835,179.9316 Q213.4603,180.1432 212.9883,180.2572 Q212.5163,180.3711 212.0117,180.3711 Q210.1563,180.3711 209.1797,179.1667 Q208.2194,177.946 208.2194,175.651 Q208.2194,173.3398 209.1797,172.1354 Q210.1563,170.9147 212.0117,170.9147 Q212.5163,170.9147 212.9883,171.0286 Q213.4766,171.1263 213.8835,171.3542 L213.8835,173.3561 Q213.4277,172.9329 212.9883,172.7376 Q212.5488,172.526 212.0931,172.526 Q211.1003,172.526 210.5957,173.3236 Q210.0911,174.1048 210.0911,175.651 Q210.0911,177.181 210.5957,177.9622 Q211.1003,178.7435 212.0931,178.7435 Q212.5488,178.7435 212.9883,178.5482 Q213.4277,178.3529 213.8835,177.9297 L213.8835,179.9316 Z " fill="#000000"/><text fill="#33BEFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="54.1667" x="230.7292" y="179.8319">Settings</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="198.4375" x2="292.1875" y1="193.1966" y2="193.1966"/><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="198.4375" x2="292.1875" y1="201.5299" y2="201.5299"/><!--MD5=[136e75e9f3c0869e044cccfeba471e72]
 link JPAEntityBase to Identifiable--><path codeLine="15" d="M366.9271,45.3125 C372.0417,45.3125 377.1563,45.3125 382.2708,45.3125 " fill="none" id="JPAEntityBase-to-Identifiable" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="none" points="382.4479,38.0208,403.2813,45.3125,382.4479,52.6042,382.4479,38.0208" style="stroke:#33BEFF;stroke-width:3.125;"/><!--MD5=[55c35821053f03b01c1404016c4d9bd6]
 link User to JPAEntityBase--><path codeLine="16" d="M200.0521,45.3125 C205.125,45.3125 210.1979,45.3125 215.2708,45.3125 " fill="none" id="User-to-JPAEntityBase" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="none" points="215.3021,38.0208,236.1354,45.3125,215.3021,52.6042,215.3021,38.0208" style="stroke:#33BEFF;stroke-width:3.125;"/><!--MD5=[fe4bbf0a533745526cabb92046be306f]
-link User to AuthnIdentity--><path codeLine="18" d="M143.0182,82.1607 C143.0182,82.1607 122.5,117.0625 112.6771,133.7813 " fill="none" id="User-AuthnIdentity" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="#33BEFF" points="105.7396,145.5833,114.08,139.6092,108.3771,141.0922,106.8941,135.3893,105.7396,145.5833" style="stroke:#33BEFF;stroke-width:3.125;"/><line style="stroke:#33BEFF;stroke-width:3.125;" x1="108.3771" x2="112.599" y1="141.0922" y2="133.9115"/><polygon fill="#33BEFF" points="149.3542,71.3854,142.5944,74.6611,143.0182,82.1607,149.7779,78.885,149.3542,71.3854" style="stroke:#33BEFF;stroke-width:3.125;"/><text fill="#555555" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="8.3333" x="130.5443" y="96.6344">1</text><text fill="#555555" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="8.3333" x="94.5045" y="129.2861">1</text><!--MD5=[eab3fe7c2931fc515d7f8550f6db46fd]
-link User to Settings--><path codeLine="19" d="M185.3676,82.1234 C185.3676,82.1234 211.6146,126.2188 223.2083,145.6875 " fill="none" id="User-Settings" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="#33BEFF" points="230.2292,157.4792,229.0094,147.2927,227.563,153.005,221.8507,151.5586,230.2292,157.4792" style="stroke:#33BEFF;stroke-width:3.125;"/><line style="stroke:#33BEFF;stroke-width:3.125;" x1="227.563" x2="223.3021" y1="153.005" y2="145.8438"/><polygon fill="#33BEFF" points="178.9688,71.3854,178.5888,78.8874,185.3676,82.1234,185.7475,74.6215,178.9688,71.3854" style="stroke:#33BEFF;stroke-width:3.125;"/><text fill="#555555" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="8.3333" x="166.637" y="96.6344">1</text><text fill="#555555" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="8.3333" x="210.7258" y="141.1101">1</text><!--MD5=[e67c574354edab4d67f6e5480473b1e3]
+link User to AuthnIdentity--><path codeLine="18" d="M143.0182,82.1607 C143.0182,82.1607 122.5,117.0625 112.6771,133.7813 " fill="none" id="User-AuthnIdentity" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="#33BEFF" points="105.7396,145.5833,114.08,139.6092,108.3771,141.0922,106.8941,135.3893,105.7396,145.5833" style="stroke:#33BEFF;stroke-width:3.125;"/><line style="stroke:#33BEFF;stroke-width:3.125;" x1="108.3771" x2="112.599" y1="141.0922" y2="133.9115"/><polygon fill="#33BEFF" points="149.3542,71.3854,142.5944,74.6611,143.0182,82.1607,149.7779,78.885,149.3542,71.3854" style="stroke:#33BEFF;stroke-width:3.125;"/><text fill="#227FAB" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="8.3333" x="130.5443" y="96.6344">1</text><text fill="#227FAB" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="8.3333" x="94.5045" y="129.2861">1</text><!--MD5=[eab3fe7c2931fc515d7f8550f6db46fd]
+link User to Settings--><path codeLine="19" d="M185.3676,82.1234 C185.3676,82.1234 211.6146,126.2188 223.2083,145.6875 " fill="none" id="User-Settings" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="#33BEFF" points="230.2292,157.4792,229.0094,147.2927,227.563,153.005,221.8507,151.5586,230.2292,157.4792" style="stroke:#33BEFF;stroke-width:3.125;"/><line style="stroke:#33BEFF;stroke-width:3.125;" x1="227.563" x2="223.3021" y1="153.005" y2="145.8438"/><polygon fill="#33BEFF" points="178.9688,71.3854,178.5888,78.8874,185.3676,82.1234,185.7475,74.6215,178.9688,71.3854" style="stroke:#33BEFF;stroke-width:3.125;"/><text fill="#227FAB" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="8.3333" x="166.637" y="96.6344">1</text><text fill="#227FAB" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="8.3333" x="210.7258" y="141.1101">1</text><!--MD5=[5f7582048eb301882dda1c0e931fed10]
 @startuml
 !$BGCOLOR = transparent
 !include ./puml-theme-cyborg-outline.puml
@@ -28,6 +28,7 @@ User -|> JPAEntityBase
 
 User "1" *- -> "1" AuthnIdentity
 User "1" *- -> "1" Settings
+
 @enduml
 
 @startuml
@@ -118,7 +119,8 @@ skinparam actor {
 skinparam arrow {
 	Thickness 3
 	Color #33beff
-	FontColor #555
+	FontColor #227FAB
+	BackgroundColor #4b4d4c
 }
 
 
@@ -369,6 +371,7 @@ User -|> JPAEntityBase
 
 User "1" *- -> "1" AuthnIdentity
 User "1" *- -> "1" Settings
+
 @enduml
 
 PlantUML version 1.2021.2(Sun Mar 07 11:10:27 UTC 2021)
