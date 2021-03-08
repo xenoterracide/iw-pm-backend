@@ -1,6 +1,8 @@
 name: PlantUML
 on:
   push:
+    tags-ignore:
+      - '**'
     paths:
       - '**.puml'
 jobs:
@@ -22,7 +24,7 @@ jobs:
       - name: get remote branch name
         id: branch
         run: |
-          BRANCH=$(echo $GITHUB_REF | cut --delimeter / --fields '3-')
+          BRANCH=$(echo $GITHUB_REF | cut --delimiter / --fields '3-')
           echo "::set-output name=name::$BRANCH"
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
