@@ -19,11 +19,6 @@ jobs:
         uses: cloudbees/plantuml-github-action@master
         with:
           args: -v -tsvg ${{ steps.getfile.outputs.files }}
-      - name: get remote branch name
-        id: branch
-        run: |
-          BRANCH=$(echo $GITHUB_REF | cut --delimiter / --fields '3-')
-          echo "::set-output name=name::$BRANCH"
       - uses: EndBug/add-and-commit@v7
         with:
           message: 'generate SVG for PlantUML'
