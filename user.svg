@@ -1,14 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="200px" preserveAspectRatio="none" style="width:479px;height:200px;" version="1.1" viewBox="0 0 479 200" width="479px" zoomAndPan="magnify"><defs><filter height="300%" id="f1l4j7b0o6usno" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[791f55d8f7bd660adaade54087ca4a22]
-class Identifiable--><rect fill="#FEFECE" filter="url(#f1l4j7b0o6usno)" height="60.8047" id="Identifiable" style="stroke: #A80036; stroke-width: 1.5;" width="102" x="366" y="8"/><ellipse cx="381" cy="24" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M376.9219,19.7656 L376.9219,17.6094 L384.3125,17.6094 L384.3125,19.7656 L381.8438,19.7656 L381.8438,27.8438 L384.3125,27.8438 L384.3125,30 L376.9219,30 L376.9219,27.8438 L379.3906,27.8438 L379.3906,19.7656 L376.9219,19.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="70" x="395" y="28.1543">Identifiable</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="367" x2="467" y1="40" y2="40"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="367" x2="467" y1="48" y2="48"/><ellipse cx="377" cy="59" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="386" y="62.2104">getId() : UUID</text><!--MD5=[ee18a90ac95d90fc062086dbcc0c5e36]
-class JPAEntityBase--><rect fill="#FEFECE" filter="url(#f1l4j7b0o6usno)" height="48" id="JPAEntityBase" style="stroke: #A80036; stroke-width: 1.5;" width="117" x="213.5" y="14.5"/><ellipse cx="228.5" cy="30.5" fill="#A9DCDF" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M228.6094,25.8438 L227.4531,30.9219 L229.7813,30.9219 L228.6094,25.8438 Z M227.125,23.6094 L230.1094,23.6094 L233.4688,36 L231.0156,36 L230.25,32.9375 L226.9688,32.9375 L226.2188,36 L223.7813,36 L227.125,23.6094 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="85" x="242.5" y="34.6543">JPAEntityBase</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="214.5" x2="329.5" y1="46.5" y2="46.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="214.5" x2="329.5" y1="54.5" y2="54.5"/><!--MD5=[3fc6b740855d64b0cc767fac270895d9]
-class AuthnIdentity--><rect fill="#FEFECE" filter="url(#f1l4j7b0o6usno)" height="60.8047" id="AuthnIdentity" style="stroke: #A80036; stroke-width: 1.5;" width="138" x="6" y="129"/><ellipse cx="31.35" cy="145" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M34.3188,150.6406 Q33.7406,150.9375 33.1,151.0781 Q32.4594,151.2344 31.7563,151.2344 Q29.2563,151.2344 27.9281,149.5938 Q26.6156,147.9375 26.6156,144.8125 Q26.6156,141.6875 27.9281,140.0313 Q29.2563,138.375 31.7563,138.375 Q32.4594,138.375 33.1,138.5313 Q33.7563,138.6875 34.3188,138.9844 L34.3188,141.7031 Q33.6938,141.125 33.1,140.8594 Q32.5063,140.5781 31.8813,140.5781 Q30.5375,140.5781 29.85,141.6563 Q29.1625,142.7188 29.1625,144.8125 Q29.1625,146.9063 29.85,147.9844 Q30.5375,149.0469 31.8813,149.0469 Q32.5063,149.0469 33.1,148.7813 Q33.6938,148.5 34.3188,147.9219 L34.3188,150.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="83" x="47.65" y="149.1543">AuthnIdentity</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="143" y1="161" y2="161"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="169"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="26" y="175.2104">foreignUserId: UUID</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="143" y1="181.8047" y2="181.8047"/><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
-class User--><rect fill="#FEFECE" filter="url(#f1l4j7b0o6usno)" height="48" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="61" x="117.5" y="14.5"/><ellipse cx="132.5" cy="30.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M135.4688,36.1406 Q134.8906,36.4375 134.25,36.5781 Q133.6094,36.7344 132.9063,36.7344 Q130.4063,36.7344 129.0781,35.0938 Q127.7656,33.4375 127.7656,30.3125 Q127.7656,27.1875 129.0781,25.5313 Q130.4063,23.875 132.9063,23.875 Q133.6094,23.875 134.25,24.0313 Q134.9063,24.1875 135.4688,24.4844 L135.4688,27.2031 Q134.8438,26.625 134.25,26.3594 Q133.6563,26.0781 133.0313,26.0781 Q131.6875,26.0781 131,27.1563 Q130.3125,28.2188 130.3125,30.3125 Q130.3125,32.4063 131,33.4844 Q131.6875,34.5469 133.0313,34.5469 Q133.6563,34.5469 134.25,34.2813 Q134.8438,34 135.4688,33.4219 L135.4688,36.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="146.5" y="34.6543">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="118.5" x2="177.5" y1="46.5" y2="46.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="118.5" x2="177.5" y1="54.5" y2="54.5"/><!--MD5=[fb0932da17f9982e4848347a102654e2]
-class Settings--><rect fill="#FEFECE" filter="url(#f1l4j7b0o6usno)" height="48" id="Settings" style="stroke: #A80036; stroke-width: 1.5;" width="84" x="179" y="135.5"/><ellipse cx="194" cy="151.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M196.9688,157.1406 Q196.3906,157.4375 195.75,157.5781 Q195.1094,157.7344 194.4063,157.7344 Q191.9063,157.7344 190.5781,156.0938 Q189.2656,154.4375 189.2656,151.3125 Q189.2656,148.1875 190.5781,146.5313 Q191.9063,144.875 194.4063,144.875 Q195.1094,144.875 195.75,145.0313 Q196.4063,145.1875 196.9688,145.4844 L196.9688,148.2031 Q196.3438,147.625 195.75,147.3594 Q195.1563,147.0781 194.5313,147.0781 Q193.1875,147.0781 192.5,148.1563 Q191.8125,149.2188 191.8125,151.3125 Q191.8125,153.4063 192.5,154.4844 Q193.1875,155.5469 194.5313,155.5469 Q195.1563,155.5469 195.75,155.2813 Q196.3438,155 196.9688,154.4219 L196.9688,157.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="52" x="208" y="155.6543">Settings</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="180" x2="262" y1="167.5" y2="167.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="180" x2="262" y1="175.5" y2="175.5"/><!--MD5=[136e75e9f3c0869e044cccfeba471e72]
-link JPAEntityBase to Identifiable--><path d="M330.62,38.5 C335.65,38.5 340.68,38.5 345.7,38.5 " fill="none" id="JPAEntityBase-&gt;Identifiable" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="345.71,31.5,365.71,38.5,345.71,45.5,345.71,31.5" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[55c35821053f03b01c1404016c4d9bd6]
-link User to JPAEntityBase--><path d="M178.52,38.5 C183.39,38.5 188.27,38.5 193.15,38.5 " fill="none" id="User-&gt;JPAEntityBase" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="193.21,31.5,213.21,38.5,193.21,45.5,193.21,31.5" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[fe4bbf0a533745526cabb92046be306f]
-link User to AuthnIdentity--><path d="M127.4697,72.9553 C127.4697,72.9553 108.79,103.41 100.12,117.56 " fill="none" id="User-AuthnIdentity" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="93.1,128.99,101.2155,123.4098,95.7144,124.7279,94.3962,119.2268,93.1,128.99" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="95.7144" x2="99.9" y1="124.7279" y2="117.91"/><polygon fill="#A80036" points="133.75,62.73,127.2014,65.7492,127.4697,72.9553,134.0183,69.9361,133.75,62.73" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="121.3016" y="82.5473">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="88.1844" y="117.7781">1</text><!--MD5=[eab3fe7c2931fc515d7f8550f6db46fd]
-link User to Settings--><path d="M168.5303,72.9553 C168.5303,72.9553 190.18,108.27 199.82,123.97 " fill="none" id="User-Settings" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="206.79,135.33,205.4938,125.5668,204.1756,131.0679,198.6745,129.7498,206.79,135.33" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="204.1756" x2="199.99" y1="131.0679" y2="124.25"/><polygon fill="#A80036" points="162.25,62.73,161.9817,69.9361,168.5303,72.9553,168.7986,65.7492,162.25,62.73" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="156.7484" y="82.5473">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="194.1237" y="124.2985">1</text><!--MD5=[aa90842d90565e797d15ea0503cf9d57]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="214.5833px" preserveAspectRatio="none" style="width:315px;height:214px;background:#000000;" version="1.1" viewBox="0 0 315 214" width="315.625px" zoomAndPan="magnify"><defs/><g><text fill="#33FF02" font-family="sans-serif" font-size="14.5833" font-weight="bold" lengthAdjust="spacing" textLength="271.875" x="5.2083" y="19.7917">Dot Executable: /opt/local/bin/dot</text><text fill="#33FF02" font-family="sans-serif" font-size="14.5833" font-weight="bold" lengthAdjust="spacing" textLength="151.0417" x="5.2083" y="36.7676">File does not exist</text><text fill="#33FF02" font-family="sans-serif" font-size="14.5833" font-weight="bold" lengthAdjust="spacing" textLength="303.125" x="5.2083" y="53.7435">Cannot find Graphviz. You should try</text><text fill="#33FF02" font-family="sans-serif" font-size="14.5833" font-weight="bold" lengthAdjust="spacing" textLength="0" x="10.4167" y="70.7194"/><text fill="#33FF02" font-family="sans-serif" font-size="14.5833" font-weight="bold" lengthAdjust="spacing" textLength="82.2917" x="5.2083" y="87.6953">@startuml</text><text fill="#33FF02" font-family="sans-serif" font-size="14.5833" font-weight="bold" lengthAdjust="spacing" textLength="59.375" x="5.2083" y="104.6712">testdot</text><text fill="#33FF02" font-family="sans-serif" font-size="14.5833" font-weight="bold" lengthAdjust="spacing" textLength="75" x="5.2083" y="121.6471">@enduml</text><text fill="#33FF02" font-family="sans-serif" font-size="14.5833" font-weight="bold" lengthAdjust="spacing" textLength="0" x="10.4167" y="138.623"/><text fill="#33FF02" font-family="sans-serif" font-size="14.5833" font-weight="bold" lengthAdjust="spacing" textLength="17.7083" x="10.4167" y="155.599">or</text><text fill="#33FF02" font-family="sans-serif" font-size="14.5833" font-weight="bold" lengthAdjust="spacing" textLength="0" x="10.4167" y="172.5749"/><text fill="#33FF02" font-family="sans-serif" font-size="14.5833" font-weight="bold" lengthAdjust="spacing" textLength="236.4583" x="5.2083" y="189.5508">java -jar plantuml.jar -testdot</text><text fill="#33FF02" font-family="sans-serif" font-size="14.5833" font-weight="bold" lengthAdjust="spacing" textLength="0" x="10.4167" y="206.5267"/><!--MD5=[3e8562b9c89d76b1e380eb991ff82199]
 @startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cyborg-outline/puml-theme-cyborg-outline.puml
+
 interface Identifiable {
    +getId() : UUID
 }
@@ -24,16 +17,353 @@ User -|> JPAEntityBase
 
 User "1" *- -> "1" AuthnIdentity
 User "1" *- -> "1" Settings
-
 @enduml
 
-PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+@startuml
+
+
+
+skinparam backgroundColor black
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #ADAFAE
+skinparam stereotype {
+    CBackgroundColor #777777
+    CBorderColor #444444
+    ABackgroundColor #5F8F00
+    ABorderColor #92C233
+    IBackgroundColor #a30000
+    IBorderColor #D63333
+    EBackgroundColor #cc6d00
+    EBorderColor #FFA033
+    NBackgroundColor #7a29a3
+    NBorderColor #AD5CD6
+}
+skinparam title {
+	FontColor	                 #2A9FD6
+	BorderColor	                 #777777
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              black
+}
+
+skinparam legend {
+	BackgroundColor black
+	BorderColor #777777
+	FontColor #ADAFAE
+}
+
+skinparam swimlane {
+	BorderColor #9933CC
+	BorderThickness 2
+	TitleBackgroundColor  #444444-#555
+	TitleFontColor #2A9FD6
+}
+
+
+skinparam activity {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+	BarColor #77B300
+	StartColor #9933CC
+	EndColor #9933CC
+	DiamondBackgroundColor black
+  	DiamondBorderColor #777777
+  	DiamondFontColor #777777
+}
+
+
+skinparam participant {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+	FontColor #2A9FD6
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2A9FD6
+	FontColor #FFF
+}
+
+
+skinparam sequence {
+	BorderColor #2A9FD6
+	TitleFontColor #2A9FD6
+	BackgroundColor black
+	StartColor #2A9FD6
+	EndColor #2A9FD6
+	BoxBackgroundColor black
+	BoxBorderColor #ADAFAE
+	BoxFontColor $DARk
+	LifeLineBorderColor #555
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor black
+	GroupBorderColor #ADAFAE
+	GroupFontColor #ADAFAE
+	GroupHeaderFontColor #9933CC
+	GroupBackgroundColor black
+	GroupHeaderBackgroundColor black
+	DividerBackgroundColor black
+    DividerBorderColor #ADAFAE
+    DividerBorderThickness 2
+    DividerFontColor #ADAFAE
+	ReferenceBackgroundColor black
+	ReferenceBorderColor #ADAFAE
+	ReferenceFontColor #ADAFAE
+	ReferenceHeaderFontColor #9933CC
+	ReferenceHeaderBackgroundColor black
+}
+
+
+skinparam partition {
+	BorderColor #2A9FD6
+	FontColor #2A9FD6
+	BackgroundColor black
+}
+
+
+skinparam collections {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+}
+
+
+skinparam control {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+	FontColor #2A9FD6
+}
+
+
+skinparam entity {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+	FontColor #2A9FD6
+}
+
+
+skinparam boundary {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+	FontColor #2A9FD6
+}
+
+
+skinparam agent {
+	BackgroundColor black
+	BorderColor #cc6d00
+	FontColor #ADAFAE
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor black
+	BorderColor #AD5CD6
+	FontColor #AD5CD6
+}
+
+
+skinparam artifact {
+	BackgroundColor black
+	BorderColor #BDBFBE
+	FontColor #BDBFBE
+}
+
+
+skinparam component {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+}
+
+
+skinparam interface {
+	BackgroundColor  black
+	BorderColor  #CC0000
+	FontColor #ADAFAE
+}
+
+
+skinparam storage {
+	BackgroundColor black
+  	BorderColor #FFA033
+	FontColor #FF8800
+}
+
+
+skinparam node {
+	BackgroundColor  black
+	BorderColor #ADAFAE
+	FontColor #ADAFAE
+}
+
+
+skinparam cloud {
+	BackgroundColor black
+	BorderColor #F2FCFE
+	FontColor #ADAFAE
+}
+
+
+skinparam database {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+	FontColor #2A9FD6
+}
+
+
+
+skinparam class {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+	HeaderBackgroundColor #227FAB
+	StereotypeFontColor #ADAFAE
+	BorderThickness 1
+	AttributeFontColor #ADAFAE
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+	StereotypeFontColor #ADAFAE
+	BorderThickness 1
+	AttributeFontColor #777777
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+	BorderThickness 2
+	StereotypeFontColor #2A9FD6
+}
+
+
+skinparam rectangle {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+	BorderThickness 2
+	StereotypeFontColor #2A9FD6
+}
+
+
+skinparam package {
+	BackgroundColor black
+  	BorderColor #2A9FD6
+	FontColor #2A9FD6
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor black
+  	BorderColor #FF8800
+	FontColor #FF8800
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor black
+  	BorderColor #9933CC
+	FontColor #9933CC
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+	StartColor #9933CC
+	EndColor #9933CC
+	AttributeFontColor #777777
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor black
+}
+
+
+skinparam card {
+	BackgroundColor black
+	BorderColor #9933CC
+	FontColor #9933CC
+}
+
+
+skinparam file {
+	BackgroundColor black
+	BorderColor #555
+	FontColor #555
+}
+
+
+
+interface Identifiable {
+   +getId() : UUID
+}
+
+abstract JPAEntityBase
+
+class AuthnIdentity {
+    -foreignUserId: UUID
+}
+
+JPAEntityBase -|> Identifiable
+User -|> JPAEntityBase
+
+User "1" *- -> "1" AuthnIdentity
+User "1" *- -> "1" Settings
+@enduml
+
+PlantUML version 1.2021.2(Sun Mar 07 11:10:27 UTC 2021)
 (GPL source distribution)
 Java Runtime: OpenJDK Runtime Environment
 JVM: OpenJDK 64-Bit Server VM
-Java Version: 11.0.9+11-Ubuntu-0ubuntu1
-Operating System: Linux
-Default Encoding: ANSI_X3.4-1968
+Default Encoding: UTF-8
 Language: en
-Country: US
+Country: null
 --></g></svg>
