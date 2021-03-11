@@ -28,7 +28,7 @@ jobs:
         echo "::set-output name=files::$( \
           git diff-tree -r --no-commit-id --name-only ${{ github.ref }} \
           | grep '.puml' \
-          | grep -v 'theme.puml' -v 'config.puml' \
+          | grep -E -v 'theme.puml|config.puml' \
           | xargs \
         )"
     - run: java -jar plantuml.jar -v -tsvg -config config.puml ${{ steps.getfile.outputs.files }}
