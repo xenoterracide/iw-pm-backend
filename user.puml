@@ -18,5 +18,4 @@ User -|> JPAEntityBase
 
 User "1" *--> "1" AuthnIdentity
 User "1" *--> "1" Settings
-
 @enduml
