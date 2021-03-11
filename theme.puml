@@ -23,7 +23,7 @@ skinparam backgroundColor $BGCOLOR
 !$GREEN = "#77B300"
 !$TEAL = "#20c997"
 !$CYAN = "#9933CC"
-!$WHITE = "#FFF"
+!$WHITE = "#AliceBlue"
 !$GRAY_LIGHT = "#222"
 !$GRAY = "#555"
 !$PRIMARY = "#33beff"
@@ -44,7 +44,7 @@ skinparam backgroundColor $BGCOLOR
 !$FGCOLOR = "#ff4500"
 !$PRIMARY_DARK = "#55B2DE"
 !$PRIMARY_LIGHT = "#227FAB"
-!$PRIMARY_TEXT = $PRIMARY
+!$PRIMARY_TEXT = $WHITE
 !$SECONDARY_DARK = "#777777"
 !$SECONDARY_LIGHT = "#444444"
 !$SECONDARY_TEXT = $SECONDARY_DARK
@@ -338,6 +338,7 @@ skinparam class {
 	StereotypeFontColor $DARK
 	BorderThickness 1
 	AttributeFontColor $DARK
+	BackgroundColor $PRIMARY_TEXT
 	AttributeFontSize 11
 }
 !endsub
