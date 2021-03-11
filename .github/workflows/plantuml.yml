@@ -10,7 +10,6 @@ jobs:
     - uses: actions/checkout@v2
       with:
         ref: ${{ github.head_ref }}
-        fetch-depth: 2
     - uses: ts-graphviz/setup-graphviz@v1
     - name: Get changed UML files
       id: getfile
