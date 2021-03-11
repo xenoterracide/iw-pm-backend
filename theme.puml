@@ -86,7 +86,7 @@ skinparam backgroundColor $BGCOLOR
 ''
 '' Global Default Values
 ''
-skinparam defaultFontName       "SansSerif"
+skinparam defaultFontName       "DejaVu Sans"
 skinparam defaultFontSize       12
 skinparam dpi                   100
 skinparam shadowing             false
