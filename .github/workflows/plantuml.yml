@@ -9,6 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: ts-graphviz/setup-graphviz@v1
+    - run: git diff-tree -r --no-commit-id --name-only ${{ github.sha }} | grep '.puml' | xargs
     - name: Get changed UML files
       id: getfile
       run: |
