@@ -11,15 +11,12 @@ jobs:
       with:
         fetch-depth: 2
     - uses: ts-graphviz/setup-graphviz@v1
-    - run: git diff-tree -r --no-commit-id --name-only HEAD | grep '.puml' | xargs
-    - run: git diff HEAD..HEAD~1
     - name: Get changed UML files
       id: getfile
       run: |
-        echo "::set-output name=files::$(git diff-tree -r --no-commit-id --name-only HEAD | grep '.puml' | xargs)"
+        echo "::set-output name=files::$(git diff-tree -r --no-commit-id --name-only ${{ github.ref }} | grep '.puml' | xargs)"
     - name: UML files considered echo output
-      run: |
-        echo ${{ steps.getfile.outputs.files }}
+      run: echo ${{ steps.getfile.outputs.files }}
     - uses: actions/cache@v2
       with:
         path: plantuml.jar
