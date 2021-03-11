@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="228.125px" preserveAspectRatio="none" style="width:559px;height:228px;background:#00000000;" version="1.1" viewBox="0 0 559 228" width="559.375px" zoomAndPan="magnify"><defs/><g><!--MD5=[791f55d8f7bd660adaade54087ca4a22]
-class Identifiable--><rect codeLine="1" height="75.8057" id="Identifiable" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;fill:none;" width="114.5833" x="438.0208" y="7.2917"/><rect fill="#227FAB" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="114.5833" x="438.0208" y="7.2917"/><rect fill="#227FAB" height="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="114.5833" x="438.0208" y="38.5091"/><rect codeLine="1" fill="none" height="75.8057" id="Identifiable" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="114.5833" x="438.0208" y="7.2917"/><ellipse cx="452.6042" cy="24.9837" fill="#A30000" rx="10.4167" ry="10.4167" style="stroke:#D63333;stroke-width:1.0416666666666667;"/><path d="M449.4954,22.1517 L449.4954,20.5566 L454.9154,20.5566 L454.9154,22.1517 L453.1087,22.1517 L453.1087,28.0762 L454.9154,28.0762 L454.9154,29.6712 L449.4954,29.6712 L449.4954,28.0762 L451.3021,28.0762 L451.3021,22.1517 L449.4954,22.1517 Z " fill="#000000"/><text fill="#33BEFF" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="72.9167" x="471.3542" y="29.3111">Identifiable</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="439.0625" x2="551.5625" y1="42.6758" y2="42.6758"/><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="439.0625" x2="551.5625" y1="51.0091" y2="51.0091"/><ellipse cx="449.4792" cy="62.4674" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#4B4D4C" font-family="Verdana" font-size="11.4583" lengthAdjust="spacing" textLength="78.125" x="463.0208" y="71.02">getId() : UUID</text><!--MD5=[08b970128e31e9ef0c0b96878ce54de7]
-class Neo4jEntityBase--><rect codeLine="5" height="52.0508" id="Neo4jEntityBase" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;fill:none;" width="147.9167" x="253.6458" y="19.2708"/><rect fill="#227FAB" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="147.9167" x="253.6458" y="19.2708"/><rect fill="#227FAB" height="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="147.9167" x="253.6458" y="50.4883"/><rect codeLine="5" fill="none" height="52.0508" id="Neo4jEntityBase" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="147.9167" x="253.6458" y="19.2708"/><ellipse cx="268.2292" cy="36.9629" fill="#5F8F00" rx="10.4167" ry="10.4167" style="stroke:#92C233;stroke-width:1.0416666666666667;"/><path d="M267.8223,33.9193 L266.9759,37.6465 L268.6849,37.6465 L267.8223,33.9193 Z M266.7318,32.2754 L268.929,32.2754 L271.3867,41.39 L269.5801,41.39 L269.0267,39.1439 L266.6178,39.1439 L266.0645,41.39 L264.2578,41.39 L266.7318,32.2754 Z " fill="#000000"/><text fill="#33BEFF" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="106.25" x="286.9792" y="41.2903">Neo4jEntityBase</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="254.6875" x2="400.5208" y1="54.6549" y2="54.6549"/><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="254.6875" x2="400.5208" y1="62.9883" y2="62.9883"/><!--MD5=[3fc6b740855d64b0cc767fac270895d9]
-class AuthnIdentity--><rect codeLine="7" height="75.8057" id="AuthnIdentity" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;fill:none;" width="153.125" x="7.2917" y="145.8333"/><rect fill="#227FAB" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="153.125" x="7.2917" y="145.8333"/><rect fill="#227FAB" height="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="153.125" x="7.2917" y="177.0508"/><rect codeLine="7" fill="none" height="75.8057" id="AuthnIdentity" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="153.125" x="7.2917" y="145.8333"/><ellipse cx="33.125" cy="163.5254" fill="#777777" rx="10.4167" ry="10.4167" style="stroke:#444444;stroke-width:1.0416666666666667;"/><path d="M35.0293,167.9525 Q34.6061,168.1641 34.1341,168.278 Q33.6621,168.3919 33.1576,168.3919 Q31.3021,168.3919 30.3255,167.1875 Q29.3652,165.9668 29.3652,163.6719 Q29.3652,161.3607 30.3255,160.1563 Q31.3021,158.9355 33.1576,158.9355 Q33.6621,158.9355 34.1341,159.0495 Q34.6224,159.1471 35.0293,159.375 L35.0293,161.377 Q34.5736,160.9538 34.1341,160.7585 Q33.6947,160.5469 33.2389,160.5469 Q32.2461,160.5469 31.7415,161.3444 Q31.237,162.1257 31.237,163.6719 Q31.237,165.2018 31.7415,165.9831 Q32.2461,166.7643 33.2389,166.7643 Q33.6947,166.7643 34.1341,166.569 Q34.5736,166.3737 35.0293,165.9505 L35.0293,167.9525 Z " fill="#000000"/><text fill="#33BEFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="86.4583" x="54.375" y="167.8528">AuthnIdentity</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="8.3333" x2="159.375" y1="181.2174" y2="181.2174"/><rect fill="none" height="6.25" style="stroke:#C82930;stroke-width:1.0416666666666667;" width="6.25" x="15.625" y="189.5508"/><text fill="#4B4D4C" font-family="Verdana" font-size="11.4583" lengthAdjust="spacing" textLength="116.6667" x="32.2917" y="201.2283">foreignUserId: UUID</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="8.3333" x2="159.375" y1="213.3057" y2="213.3057"/><!--MD5=[fb0932da17f9982e4848347a102654e2]
-class Settings--><rect codeLine="11" height="75.8057" id="Settings" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;fill:none;" width="162.5" x="197.3958" y="145.8333"/><rect fill="#227FAB" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="162.5" x="197.3958" y="145.8333"/><rect fill="#227FAB" height="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="162.5" x="197.3958" y="177.0508"/><rect codeLine="11" fill="none" height="75.8057" id="Settings" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="162.5" x="197.3958" y="145.8333"/><ellipse cx="242.1875" cy="163.5254" fill="#777777" rx="10.4167" ry="10.4167" style="stroke:#444444;stroke-width:1.0416666666666667;"/><path d="M244.0918,167.9525 Q243.6686,168.1641 243.1966,168.278 Q242.7246,168.3919 242.2201,168.3919 Q240.3646,168.3919 239.388,167.1875 Q238.4277,165.9668 238.4277,163.6719 Q238.4277,161.3607 239.388,160.1563 Q240.3646,158.9355 242.2201,158.9355 Q242.7246,158.9355 243.1966,159.0495 Q243.6849,159.1471 244.0918,159.375 L244.0918,161.377 Q243.6361,160.9538 243.1966,160.7585 Q242.7572,160.5469 242.3014,160.5469 Q241.3086,160.5469 240.804,161.3444 Q240.2995,162.1257 240.2995,163.6719 Q240.2995,165.2018 240.804,165.9831 Q241.3086,166.7643 242.3014,166.7643 Q242.7572,166.7643 243.1966,166.569 Q243.6361,166.3737 244.0918,165.9505 L244.0918,167.9525 Z " fill="#000000"/><text fill="#33BEFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="54.1667" x="267.1875" y="167.8528">Settings</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="198.4375" x2="358.8542" y1="181.2174" y2="181.2174"/><ellipse cx="208.8542" cy="192.6758" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;fill:none;"/><text fill="#4B4D4C" font-family="Verdana" font-size="11.4583" lengthAdjust="spacing" textLength="126.0417" x="222.3958" y="201.2283">displayName?: String</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="198.4375" x2="358.8542" y1="213.3057" y2="213.3057"/><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
-class User--><rect height="52.0508" id="User" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;fill:none;" width="71.875" x="144.7917" y="19.2708"/><rect fill="#227FAB" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="71.875" x="144.7917" y="19.2708"/><rect fill="#227FAB" height="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="71.875" x="144.7917" y="50.4883"/><rect fill="none" height="52.0508" id="User" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="71.875" x="144.7917" y="19.2708"/><ellipse cx="159.375" cy="36.9629" fill="#777777" rx="10.4167" ry="10.4167" style="stroke:#444444;stroke-width:1.0416666666666667;"/><path d="M161.2793,41.39 Q160.8561,41.6016 160.3841,41.7155 Q159.9121,41.8294 159.4076,41.8294 Q157.5521,41.8294 156.5755,40.625 Q155.6152,39.4043 155.6152,37.1094 Q155.6152,34.7982 156.5755,33.5938 Q157.5521,32.373 159.4076,32.373 Q159.9121,32.373 160.3841,32.487 Q160.8724,32.5846 161.2793,32.8125 L161.2793,34.8145 Q160.8236,34.3913 160.3841,34.196 Q159.9447,33.9844 159.4889,33.9844 Q158.4961,33.9844 157.9915,34.7819 Q157.487,35.5632 157.487,37.1094 Q157.487,38.6393 157.9915,39.4206 Q158.4961,40.2018 159.4889,40.2018 Q159.9447,40.2018 160.3841,40.0065 Q160.8236,39.8112 161.2793,39.388 L161.2793,41.39 Z " fill="#000000"/><text fill="#33BEFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="30.2083" x="178.125" y="41.2903">User</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="145.8333" x2="215.625" y1="54.6549" y2="54.6549"/><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="145.8333" x2="215.625" y1="62.9883" y2="62.9883"/><!--MD5=[59e4e621f0e9787a6910cefff9f48e41]
-link Neo4jEntityBase to Identifiable--><path codeLine="15" d="M401.6354,45.3125 C406.7292,45.3125 411.8229,45.3125 416.9167,45.3125 " fill="none" id="Neo4jEntityBase-to-Identifiable" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="none" points="417.0313,38.0208,437.8646,45.3125,417.0313,52.6042,417.0313,38.0208" style="stroke:#33BEFF;stroke-width:3.125;"/><!--MD5=[bc6af1c5d9a125b0e301a2f7e8b55ec9]
-link User to Neo4jEntityBase--><path codeLine="16" d="M216.875,45.3125 C222.1354,45.3125 227.4063,45.3125 232.6771,45.3125 " fill="none" id="User-to-Neo4jEntityBase" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="none" points="232.8021,38.0208,253.6354,45.3125,232.8021,52.6042,232.8021,38.0208" style="stroke:#33BEFF;stroke-width:3.125;"/><!--MD5=[fe4bbf0a533745526cabb92046be306f]
-link User to AuthnIdentity--><path codeLine="18" d="M155.7202,81.5765 C155.7202,81.5765 130.4792,117.1458 118.3958,134.1563 " fill="none" id="User-AuthnIdentity" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="#33BEFF" points="110.2813,145.5833,119.1069,140.3527,113.2972,141.337,112.3128,135.5273,110.2813,145.5833" style="stroke:#33BEFF;stroke-width:3.125;"/><line style="stroke:#33BEFF;stroke-width:3.125;" x1="113.2972" x2="118.125" y1="141.337" y2="134.5469"/><polygon fill="#33BEFF" points="162.9583,71.3854,155.9422,74.0683,155.7202,81.5765,162.7363,78.8937,162.9583,71.3854" style="stroke:#33BEFF;stroke-width:3.125;"/><text fill="#FF4500" font-family="Verdana" font-size="18.75" font-weight="bold" lengthAdjust="spacing" textLength="13.5417" x="138.3513" y="102.3081">1</text><text fill="#FF4500" font-family="Verdana" font-size="18.75" font-weight="bold" lengthAdjust="spacing" textLength="13.5417" x="94.0145" y="127.7881">1</text><!--MD5=[eab3fe7c2931fc515d7f8550f6db46fd]
-link User to Settings--><path codeLine="19" d="M205.966,81.5478 C205.966,81.5478 231.5208,117.1458 243.7292,134.1563 " fill="none" id="User-Settings" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="#33BEFF" points="251.9375,145.5833,249.8597,135.5367,248.9021,141.351,243.0879,140.3934,251.9375,145.5833" style="stroke:#33BEFF;stroke-width:3.125;"/><line style="stroke:#33BEFF;stroke-width:3.125;" x1="248.9021" x2="244.0365" y1="141.351" y2="134.5833"/><polygon fill="#33BEFF" points="198.6875,71.3854,198.9393,78.8928,205.966,81.5478,205.7142,74.0405,198.6875,71.3854" style="stroke:#33BEFF;stroke-width:3.125;"/><text fill="#FF4500" font-family="Verdana" font-size="18.75" font-weight="bold" lengthAdjust="spacing" textLength="13.5417" x="181.1146" y="102.3081">1</text><text fill="#FF4500" font-family="Verdana" font-size="18.75" font-weight="bold" lengthAdjust="spacing" textLength="13.5417" x="226.5381" y="127.7881">1</text><!--MD5=[81e01ef38c8ad3ca4b9ccd8da60756f9]
+class Identifiable--><rect codeLine="2" fill="#F0F8FF" height="75.8057" id="Identifiable" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="114.5833" x="438.0208" y="7.2917"/><rect fill="#227FAB" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="114.5833" x="438.0208" y="7.2917"/><rect fill="#227FAB" height="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="114.5833" x="438.0208" y="38.5091"/><rect codeLine="2" fill="none" height="75.8057" id="Identifiable" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="114.5833" x="438.0208" y="7.2917"/><ellipse cx="452.6042" cy="24.9837" fill="#A30000" rx="10.4167" ry="10.4167" style="stroke:#D63333;stroke-width:1.0416666666666667;"/><path d="M449.4954,22.1517 L449.4954,20.5566 L454.9154,20.5566 L454.9154,22.1517 L453.1087,22.1517 L453.1087,28.0762 L454.9154,28.0762 L454.9154,29.6712 L449.4954,29.6712 L449.4954,28.0762 L451.3021,28.0762 L451.3021,22.1517 L449.4954,22.1517 Z " fill="#000000"/><text fill="#F0F8FF" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="72.9167" x="471.3542" y="29.3111">Identifiable</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="439.0625" x2="551.5625" y1="42.6758" y2="42.6758"/><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="439.0625" x2="551.5625" y1="51.0091" y2="51.0091"/><ellipse cx="449.4792" cy="62.4674" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#4B4D4C" font-family="Verdana" font-size="11.4583" lengthAdjust="spacing" textLength="78.125" x="463.0208" y="71.02">getId() : UUID</text><!--MD5=[08b970128e31e9ef0c0b96878ce54de7]
+class Neo4jEntityBase--><rect codeLine="6" fill="#F0F8FF" height="52.0508" id="Neo4jEntityBase" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="147.9167" x="253.6458" y="19.2708"/><rect fill="#227FAB" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="147.9167" x="253.6458" y="19.2708"/><rect fill="#227FAB" height="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="147.9167" x="253.6458" y="50.4883"/><rect codeLine="6" fill="none" height="52.0508" id="Neo4jEntityBase" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="147.9167" x="253.6458" y="19.2708"/><ellipse cx="268.2292" cy="36.9629" fill="#5F8F00" rx="10.4167" ry="10.4167" style="stroke:#92C233;stroke-width:1.0416666666666667;"/><path d="M267.8223,33.9193 L266.9759,37.6465 L268.6849,37.6465 L267.8223,33.9193 Z M266.7318,32.2754 L268.929,32.2754 L271.3867,41.39 L269.5801,41.39 L269.0267,39.1439 L266.6178,39.1439 L266.0645,41.39 L264.2578,41.39 L266.7318,32.2754 Z " fill="#000000"/><text fill="#F0F8FF" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="106.25" x="286.9792" y="41.2903">Neo4jEntityBase</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="254.6875" x2="400.5208" y1="54.6549" y2="54.6549"/><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="254.6875" x2="400.5208" y1="62.9883" y2="62.9883"/><!--MD5=[3fc6b740855d64b0cc767fac270895d9]
+class AuthnIdentity--><rect codeLine="8" fill="#F0F8FF" height="75.8057" id="AuthnIdentity" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="153.125" x="7.2917" y="145.8333"/><rect fill="#227FAB" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="153.125" x="7.2917" y="145.8333"/><rect fill="#227FAB" height="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="153.125" x="7.2917" y="177.0508"/><rect codeLine="8" fill="none" height="75.8057" id="AuthnIdentity" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="153.125" x="7.2917" y="145.8333"/><ellipse cx="33.125" cy="163.5254" fill="#777777" rx="10.4167" ry="10.4167" style="stroke:#444444;stroke-width:1.0416666666666667;"/><path d="M35.0293,167.9525 Q34.6061,168.1641 34.1341,168.278 Q33.6621,168.3919 33.1576,168.3919 Q31.3021,168.3919 30.3255,167.1875 Q29.3652,165.9668 29.3652,163.6719 Q29.3652,161.3607 30.3255,160.1563 Q31.3021,158.9355 33.1576,158.9355 Q33.6621,158.9355 34.1341,159.0495 Q34.6224,159.1471 35.0293,159.375 L35.0293,161.377 Q34.5736,160.9538 34.1341,160.7585 Q33.6947,160.5469 33.2389,160.5469 Q32.2461,160.5469 31.7415,161.3444 Q31.237,162.1257 31.237,163.6719 Q31.237,165.2018 31.7415,165.9831 Q32.2461,166.7643 33.2389,166.7643 Q33.6947,166.7643 34.1341,166.569 Q34.5736,166.3737 35.0293,165.9505 L35.0293,167.9525 Z " fill="#000000"/><text fill="#F0F8FF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="86.4583" x="54.375" y="167.8528">AuthnIdentity</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="8.3333" x2="159.375" y1="181.2174" y2="181.2174"/><rect fill="none" height="6.25" style="stroke:#C82930;stroke-width:1.0416666666666667;" width="6.25" x="15.625" y="189.5508"/><text fill="#4B4D4C" font-family="Verdana" font-size="11.4583" lengthAdjust="spacing" textLength="116.6667" x="32.2917" y="201.2283">foreignUserId: UUID</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="8.3333" x2="159.375" y1="213.3057" y2="213.3057"/><!--MD5=[fb0932da17f9982e4848347a102654e2]
+class Settings--><rect codeLine="12" fill="#F0F8FF" height="75.8057" id="Settings" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="162.5" x="197.3958" y="145.8333"/><rect fill="#227FAB" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="162.5" x="197.3958" y="145.8333"/><rect fill="#227FAB" height="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="162.5" x="197.3958" y="177.0508"/><rect codeLine="12" fill="none" height="75.8057" id="Settings" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="162.5" x="197.3958" y="145.8333"/><ellipse cx="242.1875" cy="163.5254" fill="#777777" rx="10.4167" ry="10.4167" style="stroke:#444444;stroke-width:1.0416666666666667;"/><path d="M244.0918,167.9525 Q243.6686,168.1641 243.1966,168.278 Q242.7246,168.3919 242.2201,168.3919 Q240.3646,168.3919 239.388,167.1875 Q238.4277,165.9668 238.4277,163.6719 Q238.4277,161.3607 239.388,160.1563 Q240.3646,158.9355 242.2201,158.9355 Q242.7246,158.9355 243.1966,159.0495 Q243.6849,159.1471 244.0918,159.375 L244.0918,161.377 Q243.6361,160.9538 243.1966,160.7585 Q242.7572,160.5469 242.3014,160.5469 Q241.3086,160.5469 240.804,161.3444 Q240.2995,162.1257 240.2995,163.6719 Q240.2995,165.2018 240.804,165.9831 Q241.3086,166.7643 242.3014,166.7643 Q242.7572,166.7643 243.1966,166.569 Q243.6361,166.3737 244.0918,165.9505 L244.0918,167.9525 Z " fill="#000000"/><text fill="#F0F8FF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="54.1667" x="267.1875" y="167.8528">Settings</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="198.4375" x2="358.8542" y1="181.2174" y2="181.2174"/><ellipse cx="208.8542" cy="192.6758" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;fill:none;"/><text fill="#4B4D4C" font-family="Verdana" font-size="11.4583" lengthAdjust="spacing" textLength="126.0417" x="222.3958" y="201.2283">displayName?: String</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="198.4375" x2="358.8542" y1="213.3057" y2="213.3057"/><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect fill="#F0F8FF" height="52.0508" id="User" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="71.875" x="144.7917" y="19.2708"/><rect fill="#227FAB" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="71.875" x="144.7917" y="19.2708"/><rect fill="#227FAB" height="4.1667" style="stroke:#227FAB;stroke-width:1.0416666666666667;" width="71.875" x="144.7917" y="50.4883"/><rect fill="none" height="52.0508" id="User" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:1.0416666666666667;" width="71.875" x="144.7917" y="19.2708"/><ellipse cx="159.375" cy="36.9629" fill="#777777" rx="10.4167" ry="10.4167" style="stroke:#444444;stroke-width:1.0416666666666667;"/><path d="M161.2793,41.39 Q160.8561,41.6016 160.3841,41.7155 Q159.9121,41.8294 159.4076,41.8294 Q157.5521,41.8294 156.5755,40.625 Q155.6152,39.4043 155.6152,37.1094 Q155.6152,34.7982 156.5755,33.5938 Q157.5521,32.373 159.4076,32.373 Q159.9121,32.373 160.3841,32.487 Q160.8724,32.5846 161.2793,32.8125 L161.2793,34.8145 Q160.8236,34.3913 160.3841,34.196 Q159.9447,33.9844 159.4889,33.9844 Q158.4961,33.9844 157.9915,34.7819 Q157.487,35.5632 157.487,37.1094 Q157.487,38.6393 157.9915,39.4206 Q158.4961,40.2018 159.4889,40.2018 Q159.9447,40.2018 160.3841,40.0065 Q160.8236,39.8112 161.2793,39.388 L161.2793,41.39 Z " fill="#000000"/><text fill="#F0F8FF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="30.2083" x="178.125" y="41.2903">User</text><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="145.8333" x2="215.625" y1="54.6549" y2="54.6549"/><line style="stroke:#55B2DE;stroke-width:1.0416666666666667;" x1="145.8333" x2="215.625" y1="62.9883" y2="62.9883"/><!--MD5=[59e4e621f0e9787a6910cefff9f48e41]
+link Neo4jEntityBase to Identifiable--><path codeLine="16" d="M401.6354,45.3125 C406.7292,45.3125 411.8229,45.3125 416.9167,45.3125 " fill="none" id="Neo4jEntityBase-to-Identifiable" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="none" points="417.0313,38.0208,437.8646,45.3125,417.0313,52.6042,417.0313,38.0208" style="stroke:#33BEFF;stroke-width:3.125;"/><!--MD5=[bc6af1c5d9a125b0e301a2f7e8b55ec9]
+link User to Neo4jEntityBase--><path codeLine="17" d="M216.875,45.3125 C222.1354,45.3125 227.4063,45.3125 232.6771,45.3125 " fill="none" id="User-to-Neo4jEntityBase" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="none" points="232.8021,38.0208,253.6354,45.3125,232.8021,52.6042,232.8021,38.0208" style="stroke:#33BEFF;stroke-width:3.125;"/><!--MD5=[fe4bbf0a533745526cabb92046be306f]
+link User to AuthnIdentity--><path codeLine="19" d="M155.7202,81.5765 C155.7202,81.5765 130.4792,117.1458 118.3958,134.1563 " fill="none" id="User-AuthnIdentity" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="#33BEFF" points="110.2813,145.5833,119.1069,140.3527,113.2972,141.337,112.3128,135.5273,110.2813,145.5833" style="stroke:#33BEFF;stroke-width:3.125;"/><line style="stroke:#33BEFF;stroke-width:3.125;" x1="113.2972" x2="118.125" y1="141.337" y2="134.5469"/><polygon fill="#33BEFF" points="162.9583,71.3854,155.9422,74.0683,155.7202,81.5765,162.7363,78.8937,162.9583,71.3854" style="stroke:#33BEFF;stroke-width:3.125;"/><text fill="#FF4500" font-family="Verdana" font-size="18.75" font-weight="bold" lengthAdjust="spacing" textLength="13.5417" x="138.3513" y="102.3081">1</text><text fill="#FF4500" font-family="Verdana" font-size="18.75" font-weight="bold" lengthAdjust="spacing" textLength="13.5417" x="94.0145" y="127.7881">1</text><!--MD5=[eab3fe7c2931fc515d7f8550f6db46fd]
+link User to Settings--><path codeLine="20" d="M205.966,81.5478 C205.966,81.5478 231.5208,117.1458 243.7292,134.1563 " fill="none" id="User-Settings" style="stroke:#33BEFF;stroke-width:3.125;"/><polygon fill="#33BEFF" points="251.9375,145.5833,249.8597,135.5367,248.9021,141.351,243.0879,140.3934,251.9375,145.5833" style="stroke:#33BEFF;stroke-width:3.125;"/><line style="stroke:#33BEFF;stroke-width:3.125;" x1="248.9021" x2="244.0365" y1="141.351" y2="134.5833"/><polygon fill="#33BEFF" points="198.6875,71.3854,198.9393,78.8928,205.966,81.5478,205.7142,74.0405,198.6875,71.3854" style="stroke:#33BEFF;stroke-width:3.125;"/><text fill="#FF4500" font-family="Verdana" font-size="18.75" font-weight="bold" lengthAdjust="spacing" textLength="13.5417" x="181.1146" y="102.3081">1</text><text fill="#FF4500" font-family="Verdana" font-size="18.75" font-weight="bold" lengthAdjust="spacing" textLength="13.5417" x="226.5381" y="127.7881">1</text><!--MD5=[a7fd8634065e32a19d317f6f3f8b7178]
 @startuml
 !include ./theme.puml
+!include theme.puml
 interface Identifiable {
    +getId() : UUID
 }
@@ -88,7 +89,7 @@ skinparam swimlane {
 
 
 skinparam activity {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 	BarColor #77B300
@@ -101,7 +102,7 @@ skinparam activity {
 
 
 skinparam participant {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 	ParticipantBorderThickness 2
@@ -109,7 +110,7 @@ skinparam participant {
 
 
 skinparam actor {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 	FontColor #33beff
@@ -163,14 +164,14 @@ skinparam partition {
 
 
 skinparam collections {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 }
 
 
 skinparam control {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 	FontColor #33beff
@@ -178,7 +179,7 @@ skinparam control {
 
 
 skinparam entity {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 	FontColor #33beff
@@ -186,7 +187,7 @@ skinparam entity {
 
 
 skinparam boundary {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 	FontColor #33beff
@@ -216,7 +217,7 @@ skinparam artifact {
 
 
 skinparam component {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 }
@@ -251,7 +252,7 @@ skinparam cloud {
 
 
 skinparam database {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 	FontColor #33beff
@@ -260,19 +261,20 @@ skinparam database {
 
 
 skinparam class {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 	HeaderBackgroundColor #227FAB
 	StereotypeFontColor #4b4d4c
 	BorderThickness 1
 	AttributeFontColor #4b4d4c
+	BackgroundColor #AliceBlue
 	AttributeFontSize 11
 }
 
 
 skinparam object {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 	StereotypeFontColor #4b4d4c
@@ -283,7 +285,7 @@ skinparam object {
 
 
 skinparam usecase {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 	BorderThickness 2
@@ -292,7 +294,7 @@ skinparam usecase {
 
 
 skinparam rectangle {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 	BorderThickness 2
@@ -325,7 +327,7 @@ skinparam frame {
 
 
 skinparam state {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 	StartColor #9933CC
@@ -336,7 +338,7 @@ skinparam state {
 
 
 skinparam queue {
-		FontColor #33beff
+		FontColor #AliceBlue
 	BorderColor #55B2DE
 	BackgroundColor transparent
 }
