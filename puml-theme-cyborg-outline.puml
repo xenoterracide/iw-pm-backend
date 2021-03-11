@@ -169,6 +169,7 @@ skinparam arrow {
 	Thickness 3
 	Color $PRIMARY
 	FontColor $FGCOLOR
+	FontSize 18
 	BackgroundColor $DARK
 }
 !endsub
