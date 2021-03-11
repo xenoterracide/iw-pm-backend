@@ -7,7 +7,7 @@ jobs:
   plantuml:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - uses: ts-graphviz/setup-graphviz@v1
     - name: Get changed UML files
       id: getfile
@@ -22,7 +22,7 @@ jobs:
         key: ${{ runner.os }}-${{ hashFiles('plantuml.jar') }}
     - run: wget -N --no-verbose https://downloads.sourceforge.net/project/plantuml/plantuml.jar
     - run: java -jar plantuml.jar -v -tsvg ${{ steps.getfile.outputs.files }}
-    - uses: EndBug/add-and-commit@fatal-fix-1
+    - uses: EndBug/add-and-commit@v7
       with:
         message: 'generate SVG for PlantUML'
         add: '*.svg'
