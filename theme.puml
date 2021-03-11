@@ -166,6 +166,7 @@ skinparam actor {
 skinparam arrow {
 	Thickness 3
 	Color $PRIMARY
+	FontStyle bold
 	FontColor $FGCOLOR
 	FontSize 18
 	BackgroundColor $DARK
