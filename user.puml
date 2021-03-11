@@ -1,8 +1,4 @@
 @startuml
-!$BGCOLOR = transparent
-!include ./puml-theme-cyborg-outline.puml
-
-
 interface Identifiable {
    +getId() : UUID
 }

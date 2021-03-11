@@ -6,10 +6,7 @@
 '' Copyright (c) 2019 by Brett Schwarz
 
 !$THEME = "cyborg-outline"
-
-!if %not(%variable_exists("$BGCOLOR"))
-!$BGCOLOR = "black"
-!endif
+!$BGCOLOR = "transparent"
 
 skinparam backgroundColor $BGCOLOR
 

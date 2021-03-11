@@ -17,18 +17,24 @@ jobs:
         ref: ${{ github.head_ref }}
         fetch-depth: 2
     - uses: ts-graphviz/setup-graphviz@v1
-    - name: Get changed UML files
-      id: getfile
-      run: |
-        echo "::set-output name=files::$( git diff-tree -r --no-commit-id --name-only ${{ github.ref }} | grep '.puml' | xargs)"
-    - name: UML files considered echo output
-      run: echo ${{ steps.getfile.outputs.files }}
     - uses: actions/cache@v2
       with:
         path: plantuml.jar
         key: ${{ runner.os }}-${{ hashFiles('plantuml.jar') }}
     - run: wget -N --no-verbose https://downloads.sourceforge.net/project/plantuml/plantuml.jar
-    - run: java -jar plantuml.jar -v -tsvg ${{ steps.getfile.outputs.files }}
+    - name: Get changed UML files
+      id: getfile
+      run: |
+        echo "::set-output name=files::$( \
+          git diff-tree -r --no-commit-id --name-only ${{ github.ref }} \
+          | grep '.puml' \
+          | grep -v 'theme.puml' -v 'config.puml' \
+          | xargs \
+        )"
+    - run: java -jar plantuml.jar -v -tsvg -config config.puml ${{ steps.getfile.outputs.files }}
+      if: steps.getfile.outputs.files != ''
+    - run: java -jar plantuml.jar -v -tsvg -config config.puml '**/*.puml'
+      if: steps.getfile.outputs.files == ''
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Generate SVG images for PlantUML diagrams
