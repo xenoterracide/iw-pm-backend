@@ -3,6 +3,11 @@ on:
   push:
     paths:
     - '**.puml'
+    tags-ignore:
+    - '**'
+    branches-ignore:
+    - master
+    - maint
 jobs:
   plantuml:
     runs-on: ubuntu-latest
