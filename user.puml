@@ -3,7 +3,7 @@ interface Identifiable {
    +getId() : UUID
 }
 
-abstract JPAEntityBase
+abstract Neo4jEntityBase
 
 class AuthnIdentity {
     -foreignUserId: UUID
@@ -14,7 +14,7 @@ class Settings {
 }
 
 Neo4jEntityBase -|> Identifiable
-User -|> JPAEntityBase
+User -|> Neo4jEntityBase
 
 User "1" *--> "1" AuthnIdentity
 User "1" *--> "1" Settings
