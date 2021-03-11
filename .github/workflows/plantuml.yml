@@ -22,6 +22,7 @@ jobs:
         path: plantuml.jar
         key: ${{ runner.os }}-${{ hashFiles('plantuml.jar') }}
     - run: wget -N --no-verbose https://downloads.sourceforge.net/project/plantuml/plantuml.jar
+    - run: java -jar plantuml.jar -printfonts
     - name: Get changed UML files
       id: getfile
       run: |
