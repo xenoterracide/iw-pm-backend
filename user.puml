@@ -13,7 +13,7 @@ class Settings {
     +displayName?: String
 }
 
-JPAEntityBase -|> Identifiable
+Neo4jEntityBase -|> Identifiable
 User -|> JPAEntityBase
 
 User "1" *--> "1" AuthnIdentity
