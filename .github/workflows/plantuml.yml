@@ -14,7 +14,7 @@ jobs:
     - name: Get changed UML files
       id: getfile
       run: |
-        echo "::set-output name=files::$(git diff-tree -r --no-commit-id --name-only ${{ github.ref }} | grep '.puml' | xargs)"
+        echo "::set-output name=files::$( git diff-tree -r --no-commit-id --name-only ${{ github.ref }} | grep '.puml' | xargs)"
     - name: UML files considered echo output
       run: echo ${{ steps.getfile.outputs.files }}
     - uses: actions/cache@v2
@@ -23,7 +23,7 @@ jobs:
         key: ${{ runner.os }}-${{ hashFiles('plantuml.jar') }}
     - run: wget -N --no-verbose https://downloads.sourceforge.net/project/plantuml/plantuml.jar
     - run: java -jar plantuml.jar -v -tsvg ${{ steps.getfile.outputs.files }}
-    - uses: EndBug/add-and-commit@v7
+    - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        message: 'generate SVG for PlantUML'
-        add: '*.svg'
+        commit_message: Generate SVG images for PlantUML diagrams
+        file_pattern: '*.svg'
