@@ -11,6 +11,8 @@ on:
 jobs:
   plantuml:
     runs-on: ubuntu-latest
+    env:
+      PLANTUML_ARGS:
     steps:
     - uses: actions/checkout@v2
       with:
@@ -24,16 +26,32 @@ jobs:
     - run: wget -N --no-verbose https://downloads.sourceforge.net/project/plantuml/plantuml.jar
     - name: Get changed UML files
       id: getfile
+      shell: bash
       run: |
-        echo "::set-output name=files::$( \
-          git diff-tree -r --no-commit-id --name-only ${{ github.ref }} \
-          | grep '.puml' \
-          | grep -E -v 'theme.puml|config.puml' \
-          | xargs \
-        )"
-    - run: java -jar plantuml.jar -v -tsvg -config config.puml ${{ steps.getfile.outputs.files }}
+        set -x
+        git diff-tree -r --no-commit-id --summary HEAD \
+          | awk -F' ' '{
+            # ensure we are not trying to process deleted files
+            # only process puml files
+            # do not try to process our theme or custom config
+            if ( $1 !~ /^delete$/ && $4 ~ /\.puml$/ && $4 !~ /(theme|config)\.puml$/ )
+            {
+              # only print the file name and strip newlines for spaces
+              printf "::set-output name=files::" "%s ", $4
+            }
+          }
+          END { print "" } # ensure we do print a newline at the end
+        '
+        set +x
+    - name: PlantUML Opts
+      id: puml
+      run: |
+        OPTS="-tsvg -I.config/plantuml/theme.puml -verbose"
+        echo "::set-output name=opts::$OPTS"
+    - run: java -jar plantuml.jar -version
+    - run: java -jar plantuml.jar ${{ steps.puml.outputs.opts }} ${{ steps.getfile.outputs.files }}
       if: steps.getfile.outputs.files != ''
-    - run: java -jar plantuml.jar -v -tsvg -config config.puml '**/*.puml'
+    - run: java -jar plantuml.jar ${{ steps.puml.outputs.opts }} '**/*.puml'
       if: steps.getfile.outputs.files == ''
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
