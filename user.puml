@@ -1,5 +1,4 @@
 @startuml
-!include theme.puml
 interface Identifiable {
    +getId() : UUID
 }
