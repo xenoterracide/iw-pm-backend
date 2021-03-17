@@ -23,50 +23,29 @@ jobs:
         key: ${{ runner.os }}-${{ hashFiles('plantuml.jar') }}
     - run: wget -N --no-verbose https://downloads.sourceforge.net/project/plantuml/plantuml.jar
     - name: Get changed UML files
-      id: changed
-      run: |
-        git diff-tree -r --no-commit-id --name-status HEAD \
-          | awk '
-            $2 ~ /\.puml$/ &&
-            $2 !~ /(theme|config)\.puml$/ &&
-            $1 !~ /^D$/ {
-              changed[++n]=$2
-            }
-            END {
-              for ( i in changed ) result = result " " changed[i]
-              printf "::set-output name=files::%s\n", result
-              printf "::warning::%s\n", result
-            }
-          '
-    - name: Get Removed UML files
-      id: removed
-      run: |
-        git diff-tree -r --no-commit-id --name-status HEAD \
-          | awk '
-            $2 ~ /\.puml$/ &&
-            $2 !~ /(theme|config)\.puml$/ &&
-            $1 ~ /^D$/ {
-              split($2, fn, ".")
-              changed[++n]=fn[1] ".svg"
-            }
-            END {
-              for ( i in changed ) result = result " " changed[i]
-              printf "::set-output name=files::%s\n", result
-              printf "::warning::%s\n", result
-            }
-          '
+      id: puml-files
+      run: git diff-tree -r --no-commit-id --name-status HEAD | awk --file ./.github/files/git_file_changes.awk
     - name: PlantUML Opts
-      id: puml
+      id: puml-opts
       run: |
-        OPTS="-tsvg -I.config/plantuml/theme.puml -verbose"
-        echo "::set-output name=opts::$OPTS"
+        OPTS="-tsvg -I.config/plantuml/theme.puml -o .svg/mode -verbose"
+        echo "::set-output name=light::$(echo $OPTS | sed -r 's/theme|mode/light-&/g')"
+        echo "::set-output name=dark::$(echo $OPTS | sed -r 's/theme|mode/dark-&/g')"
     - run: java -jar plantuml.jar -version
-    - run: java -jar plantuml.jar ${{ steps.puml.outputs.opts }} ${{ steps.changed.outputs.files }}
+    - name: Light Files Generate Changed
+      run: java -jar plantuml.jar ${{ steps.puml-opts.outputs.light }} ${{ steps.puml-files.outputs.gen-files }}
       if: steps.changed.outputs.files != ''
-    - run: java -jar plantuml.jar ${{ steps.puml.outputs.opts }} '**/*.puml'
+    - name: Dark Files Generate Changed
+      run: java -jar plantuml.jar ${{ steps.puml-opts.outputs.dark }} ${{ steps.puml-files.outputs.gen-files }}
+      if: steps.changed.outputs.files != ''
+    - name: Light Files Generate All
+      run: java -jar plantuml.jar ${{ steps.puml-opts.outputs.light }} '**/*.puml'
+      if: steps.changed.outputs.files == ''
+    - name: Dark Files Generate All
+      run: java -jar plantuml.jar ${{ steps.puml-opts.outputs.dark }} '**/*.puml'
       if: steps.changed.outputs.files == ''
     - uses: EndBug/add-and-commit@v7
       with:
         message: Generate SVG images for PlantUML diagrams
-        add: ${{ steps.changed.outputs.files }}
-        remove: ${{ steps.removed.outputs.files }}
+        add: ${{ steps.puml-files.outputs.gen-files }}
+        remove: ${{ steps.puml-files.outputs.del-files }}
