@@ -11,8 +11,6 @@ on:
 jobs:
   plantuml:
     runs-on: ubuntu-latest
-    env:
-      PLANTUML_ARGS:
     steps:
     - uses: actions/checkout@v2
       with:
@@ -25,35 +23,50 @@ jobs:
         key: ${{ runner.os }}-${{ hashFiles('plantuml.jar') }}
     - run: wget -N --no-verbose https://downloads.sourceforge.net/project/plantuml/plantuml.jar
     - name: Get changed UML files
-      id: getfile
-      shell: bash
+      id: changed
       run: |
-        set -x
-        git diff-tree -r --no-commit-id --summary HEAD \
-          | awk -F' ' '{
-            # ensure we are not trying to process deleted files
-            # only process puml files
-            # do not try to process our theme or custom config
-            if ( $1 !~ /^delete$/ && $4 ~ /\.puml$/ && $4 !~ /(theme|config)\.puml$/ )
-            {
-              # only print the file name and strip newlines for spaces
-              printf "::set-output name=files::" "%s ", $4
+        git diff-tree -r --no-commit-id --name-status HEAD \
+          | awk '
+            $2 ~ /\.puml$/ &&
+            $2 !~ /(theme|config)\.puml$/ &&
+            $1 !~ /^D$/ {
+              changed[++n]=$2
             }
-          }
-          END { print "" } # ensure we do print a newline at the end
-        '
-        set +x
+            END {
+              for ( i in changed ) result = result " " changed[i]
+              printf "::set-output name=files::%s\n", result
+              printf "::warning::%s\n", result
+            }
+          '
+    - name: Get Removed UML files
+      id: removed
+      run: |
+        git diff-tree -r --no-commit-id --name-status HEAD \
+          | awk '
+            $2 ~ /\.puml$/ &&
+            $2 !~ /(theme|config)\.puml$/ &&
+            $1 ~ /^D$/ {
+              split($2, fn, ".")
+              changed[++n]=fn[1] ".svg"
+            }
+            END {
+              for ( i in changed ) result = result " " changed[i]
+              printf "::set-output name=files::%s\n", result
+              printf "::warning::%s\n", result
+            }
+          '
     - name: PlantUML Opts
       id: puml
       run: |
         OPTS="-tsvg -I.config/plantuml/theme.puml -verbose"
         echo "::set-output name=opts::$OPTS"
     - run: java -jar plantuml.jar -version
-    - run: java -jar plantuml.jar ${{ steps.puml.outputs.opts }} ${{ steps.getfile.outputs.files }}
-      if: steps.getfile.outputs.files != ''
+    - run: java -jar plantuml.jar ${{ steps.puml.outputs.opts }} ${{ steps.changed.outputs.files }}
+      if: steps.changed.outputs.files != ''
     - run: java -jar plantuml.jar ${{ steps.puml.outputs.opts }} '**/*.puml'
-      if: steps.getfile.outputs.files == ''
-    - uses: stefanzweifel/git-auto-commit-action@v4
+      if: steps.changed.outputs.files == ''
+    - uses: EndBug/add-and-commit@v7
       with:
-        commit_message: Generate SVG images for PlantUML diagrams
-        file_pattern: '*.svg'
+        message: Generate SVG images for PlantUML diagrams
+        add: ${{ steps.changed.outputs.files }}
+        remove: ${{ steps.removed.outputs.files }}
