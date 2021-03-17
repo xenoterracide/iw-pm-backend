@@ -70,4 +70,3 @@ jobs:
         message: Generate SVG images for PlantUML diagrams
         add: ${{ steps.changed.outputs.files }}
         remove: ${{ steps.removed.outputs.files }}
-        pull_strategy: NO-PULL
