@@ -32,18 +32,16 @@ jobs:
         echo "::set-output name=light::$(echo $OPTS | sed -r 's/theme|mode/light-&/g')"
         echo "::set-output name=dark::$(echo $OPTS | sed -r 's/theme|mode/dark-&/g')"
     - run: java -jar plantuml.jar -version
-    - name: Light Files Generate Changed
-      run: java -jar plantuml.jar ${{ steps.puml-opts.outputs.light }} ${{ steps.puml-files.outputs.gen-files }}
-      if: steps.changed.outputs.files != ''
-    - name: Dark Files Generate Changed
-      run: java -jar plantuml.jar ${{ steps.puml-opts.outputs.dark }} ${{ steps.puml-files.outputs.gen-files }}
-      if: steps.changed.outputs.files != ''
-    - name: Light Files Generate All
-      run: java -jar plantuml.jar ${{ steps.puml-opts.outputs.light }} '**/*.puml'
-      if: steps.changed.outputs.files == ''
-    - name: Dark Files Generate All
-      run: java -jar plantuml.jar ${{ steps.puml-opts.outputs.dark }} '**/*.puml'
-      if: steps.changed.outputs.files == ''
+    - name: Generate Changed
+      if: steps.puml-files.outputs.gen-files != ''
+      run: |
+        java -jar plantuml.jar ${{ steps.puml-opts.outputs.light }} ${{ steps.puml-files.outputs.gen-files }}
+        java -jar plantuml.jar ${{ steps.puml-opts.outputs.dark  }} ${{ steps.puml-files.outputs.gen-files }}
+    - name: Generate All
+      if: steps.puml-files.outputs.gen-files == ''
+      run: |
+        java -jar plantuml.jar ${{ steps.puml-opts.outputs.light }} '**/*.puml'
+        java -jar plantuml.jar ${{ steps.puml-opts.outputs.dark  }} '**/*.puml'
     - uses: EndBug/add-and-commit@v7
       with:
         message: Generate SVG images for PlantUML diagrams
