@@ -33,17 +33,17 @@ jobs:
         echo "::set-output name=dark::$(echo $OPTS | sed -r 's/theme|mode/dark-&/g')"
     - run: java -jar plantuml.jar -version
     - name: Generate Changed
-      if: steps.puml-files.outputs.gen-files != ''
+      if: steps.puml-files.outputs.changed-files != ''
       run: |
-        java -jar plantuml.jar ${{ steps.puml-opts.outputs.light }} ${{ steps.puml-files.outputs.gen-files }}
-        java -jar plantuml.jar ${{ steps.puml-opts.outputs.dark  }} ${{ steps.puml-files.outputs.gen-files }}
+        java -jar plantuml.jar ${{ steps.puml-opts.outputs.light }} ${{ steps.puml-files.outputs.changed-files }}
+        java -jar plantuml.jar ${{ steps.puml-opts.outputs.dark  }} ${{ steps.puml-files.outputs.changed-files }}
     - name: Generate All
-      if: steps.puml-files.outputs.gen-files == ''
+      if: steps.puml-files.outputs.changed-files == ''
       run: |
         java -jar plantuml.jar ${{ steps.puml-opts.outputs.light }} '**/*.puml'
         java -jar plantuml.jar ${{ steps.puml-opts.outputs.dark  }} '**/*.puml'
     - uses: EndBug/add-and-commit@v7
       with:
         message: Generate SVG images for PlantUML diagrams
-        add: ${{ steps.puml-files.outputs.gen-files }}
-        remove: ${{ steps.puml-files.outputs.del-files }}
+        add: ${{ steps.puml-files.outputs.changed-files }}
+        remove: ${{ steps.puml-files.outputs.removed-files }}
