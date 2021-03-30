@@ -1,0 +1,62 @@
+name: PlantUML cli
+description: generate svg's from plantuml
+inputs:
+  version:
+    description: PlantUML version
+    required: false
+  output-format:
+    description: Output format, -t, e.g. svg, png, defaults to svg
+    required: true
+    default: svg
+  output:
+    description: PlantUML output directory, -o
+    required: false
+  include:
+    description: PlantUML files to include with -I
+    required: false
+  files:
+    description: PlantUML input files, can be a pattern, directory, or list, defaults to **/*.puml
+    required: true
+    default: '**/*.puml'
+  args:
+    description: additional PlantUML arguments e.g. -config foo.puml -Itheme.puml
+    required: false
+runs:
+  using: composite
+  steps:
+    - id: jar
+      shell: bash
+      run: |
+        echo "::group::jar"
+        set -x
+        OUT=`echo ${{ inputs.version }} | awk '{ print (match( $0, /^([[:digit:].]+)/, capture)) ? "plantuml." capture[1] ".jar" : "plantuml.jar" }'`
+        echo "::set-output name=filename::$OUT"
+        set +x
+        echo "::endgroup::"
+    - run: |
+        echo "::group::download"
+        set -x
+        URL=https://downloads.sourceforge.net/project/plantuml
+        wget --timestamping --no-verbose $URL/${{ steps.jar.outputs.filename }}
+        set +x
+        echo "::endgroup::"
+      shell: bash
+    - run: |
+        echo "::group::version"
+        set -x
+        java -jar plantuml.jar -version
+        set +x
+        echo "::endgroup::"
+      shell: bash
+    - run: |
+        echo "::group::plantuml"
+        set -x
+        java -jar ${{steps.jar.outputs.filename }} -verbose \
+          -t${{ inputs.output-format }} \
+          -output ${{ inputs.output-prefix }} \
+          -I ${{ inputs.include }} \
+          ${{ inputs.args }} \
+          ${{ inputs.files }}
+        set +x
+        echo "::endgroup::"
+      shell: bash

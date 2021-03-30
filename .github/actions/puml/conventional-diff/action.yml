@@ -1,0 +1,33 @@
+name: PlantUML conventional diff
+description: use naming conventions to provided the inputs and outputs for the PlantUML cli, requires actions/checkout
+outputs:
+  changed:
+    description: added or updated .puml files
+    value: ${{ steps.awk.outputs.changed }}
+  changed-light:
+    description: images for light mode that changed
+    value: ${{ steps.awk.outputs.changed-light }}
+  changed-dark:
+    description: images for dark mode that changed
+    value: ${{ steps.awk.outputs.changed-dark }}
+  should-regen:
+    description: whether a puml config changed and thus all should be regenerated
+    value: ${{ steps.awk.outputs.config-change && steps.find.outputs.has-puml }}
+runs:
+  using: composite
+  steps:
+    - id: awk
+      run: |
+        set -x
+        git diff-tree -r --no-commit-id --name-status ${{github.sha}} \
+          | awk -f ${{ github.action_path }}/git_file_changes.awk
+        set +x
+      shell: bash
+    - id: find
+      run: |
+        set -x
+        FOUND=$(find -name '*.puml' -path .config -prune -not -empty -print -quit)
+        VAL=`[ -n $FOUND ] && echo 'false' || echo 'true'`
+        echo "::set-output name=has-puml::$VAL"
+        set +x
+      shell: bash
