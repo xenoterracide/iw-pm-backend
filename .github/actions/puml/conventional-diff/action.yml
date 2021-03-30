@@ -13,21 +13,23 @@ outputs:
   should-regen:
     description: whether a puml config changed and thus all should be regenerated
     value: ${{ steps.awk.outputs.config-change && steps.find.outputs.has-puml }}
+  light-dir:
+    description: directory where light images are to be stored
+    value: ${{ steps.awk.outputs.light-dir }}
+  dark-dir:
+    description: directory where dark images are to be stored
+    value: ${{ steps.awk.outputs.light-dir }}
 runs:
   using: composite
   steps:
     - id: awk
       run: |
-        set -x
         git diff-tree -r --no-commit-id --name-status ${{github.sha}} \
           | awk -f ${{ github.action_path }}/git_file_changes.awk
-        set +x
       shell: bash
     - id: find
       run: |
-        set -x
         FOUND=$(find -name '*.puml' -path .config -prune -not -empty -print -quit)
         VAL=`[ -n $FOUND ] && echo 'false' || echo 'true'`
         echo "::set-output name=has-puml::$VAL"
-        set +x
       shell: bash

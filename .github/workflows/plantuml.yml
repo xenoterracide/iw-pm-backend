@@ -23,33 +23,36 @@ jobs:
         key: ${{ runner.os }}-${{ hashFiles('plantuml.jar') }}
     - uses: ./.github/actions/puml/conventional-diff
       id: puml-diff
-    - run: echo ${{ steps.puml-diff.outputs.should-regen }}
     - name: Generate changed only light
       uses: ./.github/actions/puml/gen
-      if: "!steps.puml-diff.outputs.should-regen && steps.puml-diff.outputs.changed != ''"
+      if: "steps.puml-diff.outputs.should-regen != 'true' && steps.puml-diff.outputs.changed != ''"
       with:
         output: .svg/light
         files: ${{ steps.puml-diff.outputs.changed }}
         include: .config/plantuml/light-theme.puml
+        directories: ${{ steps.puml-diff.outputs.light-dir }}
     - name: Generate changed only dark
       uses: ./.github/actions/puml/gen
-      if: "!steps.puml-diff.outputs.should-regen && steps.puml-diff.outputs.changed != ''"
+      if: "steps.puml-diff.outputs.should-regen != 'true' && steps.puml-diff.outputs.changed != ''"
       with:
         output: .svg/dark
         files: ${{ steps.puml-diff.outputs.changed }}
         include: .config/plantuml/dark-theme.puml
+        directories: ${{ steps.puml-diff.outputs.dark-dir }}
     - name: Generate all light
       uses: ./.github/actions/puml/gen
-      if: steps.puml-diff.outputs.should-regen == true
+      if: steps.puml-diff.outputs.should-regen == 'true'
       with:
         output: .svg/light
         include: .config/plantuml/light-theme.puml
+        directories: ${{ steps.puml-diff.outputs.light-dir }}
     - name: Generate all dark
       uses: ./.github/actions/puml/gen
-      if: steps.puml-diff.outputs.should-regen == true
+      if: steps.puml-diff.outputs.should-regen == 'true'
       with:
         output: .svg/dark
         include: .config/plantuml/dark-theme.puml
+        directories: ${{ steps.puml-diff.outputs.dark-dir }}
     - uses: EndBug/add-and-commit@v7
       with:
         message: Generate SVG images for PlantUML diagrams
