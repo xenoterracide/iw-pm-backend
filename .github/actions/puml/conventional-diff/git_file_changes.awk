@@ -30,7 +30,7 @@ END {
   printf "::set-output name=dark-dir::%s\n", dcsd
   printf "::set-output name=changed::%s\n", changed
   printf "::set-output name=changed-light::%s\n", lcs
-  printf "::set-output name=changed-dark::%s\n", dcs
+  printf "::set-output name=changed-dark:: %s\n", dcs
   printf "::set-output name=removed-light::%s\n", lrs
-  printf "::set-output name=removed-dark::%s\n", drs
+  printf "::set-output name=removed-dark:: %s\n", drs
 }

@@ -1,4 +1,5 @@
 @startuml
+
 interface Identifiable {
    +getId() : UUID
 }
