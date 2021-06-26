@@ -1,7 +1,0 @@
-# This is a Gradle generated file for dependency locking.
-# Manual edits can break the build and are not advised.
-# This file is expected to be part of source control.
-com.google.errorprone:error_prone_annotations:2.5.1
-org.apache.logging.log4j:log4j-api:2.13.3
-org.checkerframework:checker-qual:3.10.0
-org.springframework.boot:spring-boot-starter-parent:2.4.3
