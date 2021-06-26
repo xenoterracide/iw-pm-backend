@@ -1,0 +1,48 @@
+[versions]
+ep = "2.+"
+immutables = "2.+"
+checker = "3.+"
+picocli = "4.+"
+
+[libraries]
+assertj = { module = "org.assertj:assertj-core" }
+bndlib = "biz.aQute.bnd:bndlib:2.+"
+checker-annotations = { module = "org.checkerframework:checker-qual", version.ref = "checker" }
+checker-core = { module = "org.checkerframework:checker", version.ref = "checker" }
+commons-io = "commons-io:commons-io:2.+"
+commons-lang = { module = "org.apache.commons:commons-lang3" }
+errorprone-annotations = { module = "com.google.errorprone:error_prone_annotations", version.ref = "ep" }
+errorprone-core = { module = "com.google.errorprone:error_prone_core", version.ref = "ep" }
+errorprone-nullaway = "com.uber.nullaway:nullaway:0.+"
+immutables-core = { module = "org.immutables:value", version.ref = "immutables" }
+immutables-annotations = { module = "org.immutables:value-annotations", version.ref = "immutables" }
+jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations" }
+jackson-core = { module = "com.fasterxml.jackson.core:jackson-core" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
+jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml" }
+jackson-module-parameter-names = { module = "com.fasterxml.jackson.module:jackson-module-parameter-names" }
+junit-parameters = { module = "org.junit.jupiter:junit-jupiter-params" }
+junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine" }
+log4j-api = { module = "org.apache.logging.log4j:log4j-api" }
+mockito = { module = "org.mockito:mockito-core" }
+pebble = "io.pebbletemplates:pebble:3.+"
+picocli-core = { module = "info.picocli:picocli", version.ref = "picocli" }
+picocli-starter = { module = "info.picocli:picocli-spring-boot-starter", version.ref = "picocli" }
+spring-platform = "org.springframework.boot:spring-boot-starter-parent:2.+"
+spring-context = { module = "org.springframework:spring-context" }
+spring-core = { module = "org.springframework:spring-core" }
+spring-test = { module = "org.springframework:spring-test" }
+spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure" }
+spring-boot-starter-core = { module = "org.springframework.boot:spring-boot-starter" }
+spring-boot-starter-log4j2 = { module = "org.springframework.boot:spring-boot-starter-log4j2" }
+spring-boot-test-core = { module = "org.springframework.boot:spring-boot-test" }
+spring-boot-test-autoconfigure = { module = "org.springframework.boot:spring-boot-test-autoconfigure" }
+tika = "org.apache.tika:tika-core:1.+"
+vavr = "io.vavr:vavr:0.+"
+
+[bundles]
+compile-annotations = ["errorprone-annotations", "checker-annotations"]
+ep = ["errorprone-core", "errorprone-nullaway"]
+jackson-config = ["jackson-core", "jackson-module-parameter-names"]
+test = ["assertj", "junit-parameters"]
+spring-test = ["spring-test", "spring-boot-test-core", "spring-boot-test-autoconfigure"]

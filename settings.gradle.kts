@@ -5,4 +5,5 @@ include(
   ":authn"
 )
 
-enableFeaturePreview("ONE_LOCKFILE_PER_PROJECT")
+enableFeaturePreview("VERSION_CATALOGS")
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
