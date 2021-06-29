@@ -3,6 +3,14 @@ on:
   schedule:
     - cron: "0 6 * * *"
   push:
+    paths:
+    - '**/*.java'
+    - '**/*.kts'
+    - '**/*.properties'
+    - '**/*.xml'
+    - '**/*.lockfile'
+    - '**/*.graphql'
+    - '**/*.yml'
   create:
 jobs:
   build:
