@@ -41,9 +41,11 @@ spring-boot-starter-security = { module = "org.springframework.boot:spring-boot-
 spring-boot-starter-oauth2-client = { module = "org.springframework.boot:spring-boot-starter-oauth2-client" }
 spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
 spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux" }
+spring-boot-starter-neo4j = { module = "org.springframework.boot:spring-boot-starter-data-neo4j" }
 spring-boot-test-core = { module = "org.springframework.boot:spring-boot-test" }
 spring-boot-test-autoconfigure = { module = "org.springframework.boot:spring-boot-test-autoconfigure" }
 spring-boot-devtools = { module = "org.springframework.boot:spring-boot-devtools" }
+spring-data-neo4j = { module = "org.springframework.data:spring-data-neo4j" }
 tika = "org.apache.tika:tika-core:1.+"
 vavr = "io.vavr:vavr:0.+"
 
