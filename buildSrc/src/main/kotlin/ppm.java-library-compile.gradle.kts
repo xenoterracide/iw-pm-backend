@@ -6,7 +6,6 @@ plugins {
   `java-library`
   id("net.ltgt.errorprone")
   id("net.ltgt.nullaway")
-  id("org.checkerframework")
 }
 
 dependencies {
@@ -16,7 +15,6 @@ dependencies {
 
   compileOnly("org.checkerframework:checker-qual:3.+")
   testCompileOnly("org.checkerframework:checker-qual:3.+")
-  checkerFramework("org.checkerframework:checker:3.+")
 }
 
 java {
@@ -27,16 +25,6 @@ java {
 
 nullaway {
   annotatedPackages.add("com.xenoterracide")
-}
-
-checkerFramework {
-  excludeTests = true
-  extraJavacArgs.addAll(listOf("-Astubs=$buildDir/../config/stubs"))
-  checkers.addAll(
-    listOf(
-      "org.checkerframework.checker.nullness.NullnessChecker"
-    )
-  )
 }
 
 tasks.withType<JavaCompile>().configureEach {

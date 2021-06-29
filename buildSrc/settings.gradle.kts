@@ -1,2 +1,10 @@
 rootProject.name = "buildSrc"
-enableFeaturePreview("ONE_LOCKFILE_PER_PROJECT")
+enableFeaturePreview("VERSION_CATALOGS")
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    create("libs") {
+      from(files("../gradle/libs.versions.toml"))
+    }
+  }
+}
