@@ -1,20 +1,20 @@
-import net.ltgt.gradle.errorprone.CheckSeverity
 import net.ltgt.gradle.errorprone.errorprone
-import net.ltgt.gradle.nullaway.nullaway
+import org.gradle.accessors.dm.LibrariesForLibs
 
 plugins {
   `java-library`
+  `java-test-fixtures`
+  id("ppm.bom")
   id("net.ltgt.errorprone")
-  id("net.ltgt.nullaway")
 }
 
-dependencies {
-  errorprone("com.google.errorprone:error_prone_core:2.+")
-  errorprone("com.uber.nullaway:nullaway:0.8.+")
-  compileOnly("com.google.errorprone:error_prone_annotations:2.+")
+val libs = the<LibrariesForLibs>()
 
-  compileOnly("org.checkerframework:checker-qual:3.+")
-  testCompileOnly("org.checkerframework:checker-qual:3.+")
+dependencies {
+  errorprone(libs.bundles.ep)
+  compileOnly(libs.bundles.compile.annotations)
+  testFixturesCompileOnly(libs.bundles.compile.annotations)
+  testCompileOnly(libs.bundles.compile.annotations)
 }
 
 java {
@@ -23,29 +23,30 @@ java {
   }
 }
 
-nullaway {
-  annotatedPackages.add("com.xenoterracide")
+tasks.withType<Jar> {
+  archiveBaseName.set(project.path.substring(1).replace(":", "-"))
 }
 
 tasks.withType<JavaCompile>().configureEach {
   options.compilerArgs.addAll(
     listOf(
       "-parameters",
-//    "-Werror",
-      "-Xlint:deprecation",
-      "-Xlint:unchecked"
+      "-g",
+      "-Xlint:all",
+      "-Xlint:-processing",
+      "-Xlint:-exports",
+      "-Xlint:-requires-transitive-automatic",
+      "-Xlint:-requires-automatic",
+      "-Xlint:-fallthrough" // handled by error prone in a smarter way
     )
   )
-  options.errorprone {
-    nullaway {
-      severity.set(CheckSeverity.ERROR)
-      acknowledgeRestrictiveAnnotations.set(true)
-      handleTestAssertionLibraries.set(true)
-    }
-    disableWarningsInGeneratedCode.set(true)
-    excludedPaths.set("$buildDir/generated/sources/.*")
 
-    error(
+  options.errorprone {
+    disableWarningsInGeneratedCode.set(true)
+    excludedPaths.set(".*/build/generated/sources/annotationProcessor/.*")
+    option("NullAway:AnnotatedPackages", "com.xenoterracide")
+    option("NullAway:CustomInitializerAnnotations", "picocli.CommandLine.Parameters")
+    val errors = mutableListOf(
       "AmbiguousMethodReference",
       "ArgumentSelectionDefectChecker",
       "ArrayAsKeyOfSetOrMap",
@@ -109,7 +110,6 @@ tasks.withType<JavaCompile>().configureEach {
       "JavaLocalDateTimeGetNano",
       "JavaLocalTimeGetNano",
       "JavaTimeDefaultTimeZone",
-      // "JavaUtilDate",
       "LockNotBeforeTry",
       "LockOnBoxedPrimitive",
       "LogicalAssignment",
@@ -148,9 +148,7 @@ tasks.withType<JavaCompile>().configureEach {
       "ShortCircuitBoolean",
       "StaticAssignmentInConstructor",
       "StaticGuardedByInstance",
-      // "StaticMockMember",
       "StreamResourceLeak",
-      // "StreamToIterable",
       "StringSplitter",
       "SynchronizeOnNonFinalField",
       "ThreadJoinLoop",
@@ -168,15 +166,10 @@ tasks.withType<JavaCompile>().configureEach {
       "UnnecessaryAnonymousClass",
       "UnnecessaryLambda",
       "UnnecessaryMethodInvocationMatcher",
-      // "UnnecessaryMethodReference",
       "UnnecessaryParentheses", // sketchy
       "UnsafeFinalization",
       "UnsafeReflectiveConstructionCast",
-      "UnusedMethod",
-      "UnusedNestedClass",
-      "UnusedVariable",
       "UseCorrectAssertInTests",
-      // "UseTimeInScope",
       "VariableNameSameAsType",
       "WaitNotInLoop",
       "ClassName",
@@ -192,12 +185,10 @@ tasks.withType<JavaCompile>().configureEach {
       "AnnotationPosition",
       "AssertFalse",
       "CheckedExceptionNotThrown",
-      // "DifferentNameButSame",
       "EmptyTopLevelDeclaration",
       "EqualsBrokenForNull",
       "ExpectedExceptionChecker",
       "InconsistentOverloads",
-      // "InitializeInline",
       "InterruptedExceptionSwallowed",
       "InterfaceWithOnlyStatics",
       "NonCanonicalStaticMemberImport",
@@ -212,8 +203,34 @@ tasks.withType<JavaCompile>().configureEach {
       "MultipleTopLevelClasses",
       "PackageLocation",
       "RemoveUnusedImports",
-      "Var",
-      "WildcardImport"
+      "WildcardImport",
+      "Var"
     )
+
+    if (!providers.systemProperty("idea.active").forUseAtConfigurationTime().isPresent) {
+      errors.addAll(
+        listOf(
+          "UnusedVariable",
+          "UnusedMethod",
+          "UnusedNestedClass",
+        )
+      )
+    }
+
+    if (name != "compileTestJava") {
+      options.compilerArgs.add("-Werror")
+      errors.add("NullAway")
+    }
+
+    if (name == "compileTestJava") {
+      options.compilerArgs.addAll(
+        listOf(
+          "-Xlint:-unchecked",
+          "-Xlint:-varargs",
+        )
+      )
+    }
+
+    error(*errors.toTypedArray())
   }
 }

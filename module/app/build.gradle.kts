@@ -4,13 +4,9 @@ import org.springframework.boot.gradle.tasks.run.BootRun
 group = "com.xenoterracide"
 version = "0.1.0-SNAPSHOT"
 plugins {
-  id("ppm.java-app")
+  id("ppm.java-library")
   id("org.springframework.boot")
   id("com.gorylenko.gradle-git-properties").version("2.2.4")
-}
-
-application {
-  mainClass.set("com.xenoterracide.ppm.Application")
 }
 
 springBoot {
@@ -28,11 +24,11 @@ tasks.withType<BootJar> {
 }
 
 dependencies {
-  developmentOnly(platform("org.springframework.boot:spring-boot-starter-parent:2.4.+"))
-  developmentOnly("org.springframework.boot:spring-boot-devtools")
-  runtimeOnly("org.springframework.boot:spring-boot-starter-actuator")
-  implementation("org.springframework.boot:spring-boot-starter-web")
-  testImplementation("org.springframework.boot:spring-boot-starter-webflux")
+  developmentOnly(platform(libs.spring.platform))
+  developmentOnly(libs.spring.boot.devtools)
+  runtimeOnly(libs.spring.boot.starter.actuator)
+  implementation(libs.spring.boot.starter.web)
+  testImplementation(libs.spring.boot.starter.webflux)
 
-  runtimeOnly(project(":authn"))
+  runtimeOnly(projects.authn)
 }

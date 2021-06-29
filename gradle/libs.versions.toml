@@ -35,8 +35,12 @@ spring-test = { module = "org.springframework:spring-test" }
 spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure" }
 spring-boot-starter-core = { module = "org.springframework.boot:spring-boot-starter" }
 spring-boot-starter-log4j2 = { module = "org.springframework.boot:spring-boot-starter-log4j2" }
+spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux" }
 spring-boot-test-core = { module = "org.springframework.boot:spring-boot-test" }
 spring-boot-test-autoconfigure = { module = "org.springframework.boot:spring-boot-test-autoconfigure" }
+spring-boot-devtools = { module = "org.springframework.boot:spring-boot-devtools" }
 tika = "org.apache.tika:tika-core:1.+"
 vavr = "io.vavr:vavr:0.+"
 

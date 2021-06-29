@@ -1,5 +1,5 @@
 plugins {
-  id("ppm.java-convention")
+  id("ppm.java-library")
 }
 
 dependencies {
