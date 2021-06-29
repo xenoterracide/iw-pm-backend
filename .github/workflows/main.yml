@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       - uses: actions/cache@v2
         with:
           path: |
@@ -27,4 +27,4 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
       - run: ./gradlew --version
-      - run: ./gradlew build
+      - run: ./gradlew build --parallel

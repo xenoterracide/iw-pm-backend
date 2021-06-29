@@ -29,6 +29,6 @@ dependencies {
   runtimeOnly(libs.spring.boot.starter.actuator)
   implementation(libs.spring.boot.starter.web)
   testImplementation(libs.spring.boot.starter.webflux)
-
+  testImplementation(libs.bundles.spring.test)
   runtimeOnly(projects.authn)
 }
