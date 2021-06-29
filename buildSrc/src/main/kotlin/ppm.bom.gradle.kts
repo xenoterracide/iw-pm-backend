@@ -3,6 +3,10 @@ plugins {
   id("com.github.ben-manes.versions")
 }
 
+dependencyLocking {
+  lockAllConfigurations()
+}
+
 repositories {
   mavenCentral()
 }

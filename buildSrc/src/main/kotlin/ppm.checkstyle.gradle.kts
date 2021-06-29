@@ -3,10 +3,6 @@ plugins {
   checkstyle
 }
 
-dependencyLocking {
-  lockAllConfigurations()
-}
-
 tasks.withType<Checkstyle>().configureEach {
   isShowViolations = true
   reports {
