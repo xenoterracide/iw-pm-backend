@@ -21,3 +21,7 @@ tasks.withType<SpotBugsTask>().configureEach {
     enabled = true
   }
 }
+
+dependencies {
+  spotbugs("com.github.spotbugs:spotbugs:4.+")
+}

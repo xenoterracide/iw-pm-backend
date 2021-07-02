@@ -1,11 +1,10 @@
-import com.github.spotbugs.snom.SpotBugsTask
-
 plugins {
-  id("ppm.java-library")
-}
-
-tasks.withType<SpotBugsTask> {
-  enabled = false
+  `java-library`
+  id("ppm.bom")
+  id("ppm.java-compile")
+  id("ppm.java-test")
+  id("ppm.checkstyle")
+  id("ppm.spotless")
 }
 
 dependencies {

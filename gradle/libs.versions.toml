@@ -29,6 +29,8 @@ mockito = { module = "org.mockito:mockito-core" }
 pebble = "io.pebbletemplates:pebble:3.+"
 picocli-core = { module = "info.picocli:picocli", version.ref = "picocli" }
 picocli-starter = { module = "info.picocli:picocli-spring-boot-starter", version.ref = "picocli" }
+plugin-spotbugs = "gradle.plugin.com.github.spotbugs.snom:spotbugs-gradle-plugin:4.+"
+spotbugs = "com.github.spotbugs:spotbugs:4.+"
 spring-platform = "org.springframework.boot:spring-boot-starter-parent:2.+"
 spring-context = { module = "org.springframework:spring-context" }
 spring-core = { module = "org.springframework:spring-core" }
