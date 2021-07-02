@@ -22,6 +22,7 @@ jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
 jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml" }
 jackson-module-parameter-names = { module = "com.fasterxml.jackson.module:jackson-module-parameter-names" }
 javax-annotation = { module = "jakarta.annotation:jakarta.annotation-api" }
+jug = "com.fasterxml.uuid:java-uuid-generator:4.+"
 junit-parameters = { module = "org.junit.jupiter:junit-jupiter-params" }
 junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine" }
 log4j-api = { module = "org.apache.logging.log4j:log4j-api" }
@@ -50,6 +51,7 @@ spring-boot-test-autoconfigure = { module = "org.springframework.boot:spring-boo
 spring-boot-devtools = { module = "org.springframework.boot:spring-boot-devtools" }
 spring-data-neo4j = { module = "org.springframework.data:spring-data-neo4j" }
 tika = "org.apache.tika:tika-core:1.+"
+uuid-creator = "com.github.f4b6a3:uuid-creator:3.+"
 vavr = "io.vavr:vavr:0.+"
 
 [bundles]
