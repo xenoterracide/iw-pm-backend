@@ -24,6 +24,7 @@ tasks.withType<BootJar> {
 }
 
 dependencies {
+  testRuntimeOnly(projects.util.test)
   developmentOnly(platform(libs.spring.platform))
   developmentOnly(libs.spring.boot.devtools)
   runtimeOnly(libs.spring.boot.starter.actuator)

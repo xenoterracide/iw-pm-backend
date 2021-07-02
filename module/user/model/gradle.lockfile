@@ -95,6 +95,7 @@ org.springframework:spring-context:5.3.8=compileClasspath,runtimeClasspath,testC
 org.springframework:spring-core:5.3.8=compileClasspath,runtimeClasspath,testCompileClasspath,testFixturesRuntimeClasspath,testRuntimeClasspath
 org.springframework:spring-expression:5.3.8=compileClasspath,runtimeClasspath,testCompileClasspath,testFixturesRuntimeClasspath,testRuntimeClasspath
 org.springframework:spring-jcl:5.3.8=compileClasspath,runtimeClasspath,testCompileClasspath,testFixturesRuntimeClasspath,testRuntimeClasspath
+org.springframework:spring-test:5.3.8=testRuntimeClasspath
 org.springframework:spring-tx:5.3.8=compileClasspath,runtimeClasspath,testCompileClasspath,testFixturesRuntimeClasspath,testRuntimeClasspath
 org.yaml:snakeyaml:1.28=compileClasspath,runtimeClasspath,testCompileClasspath,testFixturesRuntimeClasspath,testRuntimeClasspath
 empty=errorproneJavac,spotbugsPlugins
