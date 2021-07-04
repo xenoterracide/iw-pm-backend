@@ -4,6 +4,6 @@ plugins {
 
 dependencies {
   api(projects.util.model)
-  implementation(libs.jug)
+  implementation(libs.uuid.creator)
   implementation(libs.spring.boot.starter.neo4j)
 }

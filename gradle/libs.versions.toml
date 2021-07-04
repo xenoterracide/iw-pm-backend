@@ -22,7 +22,6 @@ jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
 jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml" }
 jackson-module-parameter-names = { module = "com.fasterxml.jackson.module:jackson-module-parameter-names" }
 javax-annotation = { module = "jakarta.annotation:jakarta.annotation-api" }
-jug = "com.fasterxml.uuid:java-uuid-generator:4.+"
 junit-parameters = { module = "org.junit.jupiter:junit-jupiter-params" }
 junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine" }
 log4j-api = { module = "org.apache.logging.log4j:log4j-api" }

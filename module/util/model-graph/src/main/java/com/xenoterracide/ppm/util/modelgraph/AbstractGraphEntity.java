@@ -5,7 +5,7 @@
  */
 package com.xenoterracide.ppm.util.modelgraph;
 
-import com.fasterxml.uuid.Generators;
+import com.github.f4b6a3.uuid.UuidCreator;
 import com.xenoterracide.ppm.util.model.Identifiable;
 
 import java.util.UUID;
@@ -14,7 +14,7 @@ public abstract class AbstractGraphEntity implements Identifiable {
   private final UUID id;
 
   public AbstractGraphEntity() {
-    this.id = Generators.timeBasedGenerator().generate();
+    this.id = UuidCreator.getTimeOrderedWithHash();
   }
 
   @Override
