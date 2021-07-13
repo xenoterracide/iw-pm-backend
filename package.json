@@ -1,0 +1,9 @@
+{
+  "name": "backend",
+  "devDependencies": {
+    "@prettier/plugin-xml": "^0.13.1",
+    "prettier": "^2.3.2",
+    "prettier-plugin-java": "^1.3.0",
+    "prettier-plugin-properties": "^0.1.0"
+  }
+}
