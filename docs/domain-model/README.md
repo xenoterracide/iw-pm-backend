@@ -1,3 +1,3 @@
 # Domain Model
 
-* [User](./user.md)
+- [User](./user.md)

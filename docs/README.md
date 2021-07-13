@@ -1,3 +1,3 @@
 # Docs
 
-* [Domain Model](./domain-model)
+- [Domain Model](./domain-model)

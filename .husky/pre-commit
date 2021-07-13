@@ -1,4 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/common.sh"
 
-./gradlew --quiet --console=plain spotlessApply && yarn run pretty-quick --staged
+./gradlew --quiet --console=plain spotlessApply
+yarn run pretty-quick --staged
