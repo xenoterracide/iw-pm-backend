@@ -7,10 +7,12 @@ package com.xenoterracide.ppm.util.modelgraph;
 
 import com.github.f4b6a3.uuid.UuidCreator;
 import com.xenoterracide.ppm.util.model.Identifiable;
-
 import java.util.UUID;
+import org.springframework.data.annotation.Id;
 
 public abstract class AbstractGraphEntity implements Identifiable {
+
+  @Id
   private final UUID id;
 
   public AbstractGraphEntity() {

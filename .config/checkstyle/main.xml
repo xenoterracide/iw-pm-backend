@@ -103,15 +103,6 @@
   <!-- </module> -->
 
   <module name="TreeWalker">
-    <module name="ImportOrder">
-      <property name="groups" value="*,javax,java"/>
-      <property name="separated" value="true"/>
-      <property name="option" value="bottom"/>
-      <property name="sortStaticImportsAlphabetically" value="true"/>
-    </module>
-    <module name="AvoidStarImport"/>
-    <module name="AvoidStaticImport"/>
-    <module name="IllegalImport"/>
     <module name="NoLineWrap"/>
     <module name="SuppressionCommentFilter"/>
 
@@ -155,6 +146,12 @@
 
     <!-- Checks for imports                              -->
     <!-- See https://checkstyle.org/config_imports.html -->
+    <module name="CustomImportOrder">
+      <property name="customImportOrderRules"
+                value="STATIC###SPECIAL_IMPORTS"/>
+      <property name="specialImportsRegExp" value="^.*$"/>
+      <property name="sortImportsInGroupAlphabetically" value="true"/>
+    </module>
     <module name="AvoidStarImport"/>
     <module name="IllegalImport"/> <!-- defaults to sun.* packages -->
     <module name="RedundantImport"/>
@@ -227,38 +224,11 @@
       <property name="option" value="nl"/>
       <property name="tokens" value="DOT"/>
     </module>
-    <module name="ParenPad">
-      <property name="option" value="space"/>
-      <property
-        name="tokens"
-        value="
-      CTOR_CALL,
-      CTOR_DEF,
-      DOT,
-      ENUM_CONSTANT_DEF,
-      EXPR,
-      LITERAL_CATCH,
-      LITERAL_DO,
-      LITERAL_FOR,
-      LITERAL_IF,
-      LITERAL_NEW,
-      LITERAL_SWITCH,
-      LITERAL_SYNCHRONIZED,
-      LITERAL_WHILE,
-      METHOD_CALL,
-      METHOD_DEF,
-      QUESTION,
-      RESOURCE_SPECIFICATION,
-      SUPER_CTOR_CALL,
-      LAMBDA"
-      />
-    </module>
-    <module name="ParenPad">
-      <property name="tokens" value="ANNOTATION,ANNOTATION_FIELD_DEF"/>
-    </module>
+    <module name="ParenPad"/>
     <module name="TypecastParenPad"/>
     <module name="WhitespaceAfter"/>
     <module name="WhitespaceAround">
+      <property name="allowEmptyConstructors" value="true"/>
       <property name="allowEmptyTypes" value="true"/>
     </module>
     <module name="MutableException"/>
@@ -289,9 +259,7 @@
     <module name="EmptyBlock"/>
     <module name="LeftCurly"/>
     <module name="NeedBraces"/>
-    <module name="RightCurly">
-      <property name="option" value="alone"/>
-    </module>
+    <module name="RightCurly"/>
 
     <!-- Checks for common coding problems             -->
     <!-- See https://checkstyle.org/config_coding.html -->

@@ -1,3 +1,1 @@
-plugins {
-  id("ppm.java-library")
-}
+plugins { id("ppm.java-library") }

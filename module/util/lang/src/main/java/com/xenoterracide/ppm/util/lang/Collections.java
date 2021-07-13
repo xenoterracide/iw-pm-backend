@@ -7,14 +7,14 @@ package com.xenoterracide.ppm.util.lang;
 
 import java.util.Collection;
 
-public final class CollectionUtils {
+public final class Collections {
 
-  private CollectionUtils() {
+  private Collections() {
   }
 
-  public static <E, C extends Collection<E>> C requireNonEmpty( C collection ) {
-    if ( collection.isEmpty() ) {
-      throw new IllegalStateException( "collection is empty" );
+  public static <E, C extends Collection<E>> C requireNonEmpty(C collection) {
+    if (collection.isEmpty()) {
+      throw new IllegalStateException("collection is empty");
     }
     return collection;
   }

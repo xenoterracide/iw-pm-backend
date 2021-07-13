@@ -5,5 +5,5 @@
  */
 package com.xenoterracide.ppm.user.model;
 
-public class UserSettings {
+public class Settings {
 }

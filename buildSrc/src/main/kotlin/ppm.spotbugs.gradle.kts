@@ -8,7 +8,7 @@ plugins {
 }
 
 spotbugs {
-  val config = file(".config/spotbugs/exclude.xml")
+  val config = rootProject.file(".config/spotbugs/exclude.xml")
   if (config.exists()) {
     excludeFilter.set(config)
   }

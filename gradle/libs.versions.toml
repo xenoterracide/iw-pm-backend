@@ -5,12 +5,15 @@ checker = "3.+"
 picocli = "4.+"
 
 [libraries]
+api-guardian = { module = "org.apiguardian:apiguardian-api" }
 assertj = { module = "org.assertj:assertj-core" }
 bndlib = "biz.aQute.bnd:bndlib:2.+"
 checker-annotations = { module = "org.checkerframework:checker-qual", version.ref = "checker" }
 checker-core = { module = "org.checkerframework:checker", version.ref = "checker" }
 commons-io = "commons-io:commons-io:2.+"
 commons-lang = { module = "org.apache.commons:commons-lang3" }
+dgs-platform = "com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:4.+"
+dgs-starter = { module = "com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter" }
 errorprone-annotations = { module = "com.google.errorprone:error_prone_annotations", version.ref = "ep" }
 errorprone-core = { module = "com.google.errorprone:error_prone_core", version.ref = "ep" }
 errorprone-nullaway = "com.uber.nullaway:nullaway:0.+"
@@ -22,6 +25,7 @@ jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
 jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml" }
 jackson-module-parameter-names = { module = "com.fasterxml.jackson.module:jackson-module-parameter-names" }
 javax-annotation = { module = "jakarta.annotation:jakarta.annotation-api" }
+jsr305 = "com.google.code.findbugs:jsr305:3.+"
 junit-parameters = { module = "org.junit.jupiter:junit-jupiter-params" }
 junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine" }
 log4j-api = { module = "org.apache.logging.log4j:log4j-api" }
@@ -34,12 +38,14 @@ spotbugs = "com.github.spotbugs:spotbugs:4.+"
 spring-platform = "org.springframework.boot:spring-boot-starter-parent:2.+"
 spring-context = { module = "org.springframework:spring-context" }
 spring-core = { module = "org.springframework:spring-core" }
+spring-beans = { module = "org.springframework:spring-beans" }
 spring-test = { module = "org.springframework:spring-test" }
 spring-security-core = { module = "org.springframework.security:spring-security-core" }
+spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }
 spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure" }
 spring-boot-starter-core = { module = "org.springframework.boot:spring-boot-starter" }
+spring-boot-starter-jackson = { module = "org.springframework.boot:spring-boot-starter-jackson" }
 spring-boot-starter-log4j2 = { module = "org.springframework.boot:spring-boot-starter-log4j2" }
-spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }
 spring-boot-starter-security = { module = "org.springframework.boot:spring-boot-starter-security" }
 spring-boot-starter-oauth2-client = { module = "org.springframework.boot:spring-boot-starter-oauth2-client" }
 spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
@@ -48,6 +54,7 @@ spring-boot-starter-neo4j = { module = "org.springframework.boot:spring-boot-sta
 spring-boot-test-core = { module = "org.springframework.boot:spring-boot-test" }
 spring-boot-test-autoconfigure = { module = "org.springframework.boot:spring-boot-test-autoconfigure" }
 spring-boot-devtools = { module = "org.springframework.boot:spring-boot-devtools" }
+spring-data-commons = { module = "org.springframework.data:spring-data-commons" }
 spring-data-neo4j = { module = "org.springframework.data:spring-data-neo4j" }
 tika = "org.apache.tika:tika-core:1.+"
 uuid-creator = "com.github.f4b6a3:uuid-creator:3.+"
