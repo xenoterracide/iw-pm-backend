@@ -11,5 +11,5 @@ module ppm.util.modelgraph {
   requires static org.apiguardian.api;
   requires static org.checkerframework.checker.qual;
   opens com.xenoterracide.ppm.util.modelgraph to spring.core;
-  exports com.xenoterracide.ppm.util.modelgraph;
+  exports com.xenoterracide.ppm.util.modelgraph ;
 }

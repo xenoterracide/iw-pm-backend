@@ -8,5 +8,5 @@ module ppm.user.model {
   requires spring.data.commons;
   requires spring.data.neo4j;
   opens com.xenoterracide.ppm.user.model to spring.core;
-  exports com.xenoterracide.ppm.user.model;
+  exports com.xenoterracide.ppm.user.model ;
 }

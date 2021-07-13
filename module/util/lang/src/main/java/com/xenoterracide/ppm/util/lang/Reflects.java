@@ -7,6 +7,5 @@ package com.xenoterracide.ppm.util.lang;
 
 public final class Reflects {
 
-  private Reflects() {
-  }
+  private Reflects() {}
 }

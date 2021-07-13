@@ -9,8 +9,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 
 public final class Objects {
 
-  private Objects() {
-  }
+  private Objects() {}
 
   public static <T> T requireNonNull(@Nullable T o, String message) {
     if (o == null) {

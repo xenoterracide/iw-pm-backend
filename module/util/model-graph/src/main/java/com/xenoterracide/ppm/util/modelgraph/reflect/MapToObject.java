@@ -12,8 +12,7 @@ import org.springframework.data.util.ReflectionUtils;
 
 public final class MapToObject {
 
-  private MapToObject() {
-  }
+  private MapToObject() {}
 
   /*
   private static final Map<Class<?>, MultiValueMap<Constructor<?>, Parameter>> CLASSES

@@ -9,8 +9,7 @@ import java.util.Collection;
 
 public final class Collections {
 
-  private Collections() {
-  }
+  private Collections() {}
 
   public static <E, C extends Collection<E>> C requireNonEmpty(C collection) {
     if (collection.isEmpty()) {

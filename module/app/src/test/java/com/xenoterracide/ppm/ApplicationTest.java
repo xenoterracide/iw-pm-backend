@@ -14,10 +14,7 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 class ApplicationTest {
 
   @Test
-  void healthCheck(
-    @Autowired
-      WebTestClient webClient
-  ) {
+  void healthCheck(@Autowired WebTestClient webClient) {
     webClient.get().uri("/actuator/health").exchange().expectStatus().isOk();
   }
 }

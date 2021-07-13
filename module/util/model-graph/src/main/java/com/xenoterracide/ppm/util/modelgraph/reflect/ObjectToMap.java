@@ -15,8 +15,7 @@ import org.springframework.util.ReflectionUtils;
 
 public final class ObjectToMap {
 
-  private ObjectToMap() {
-  }
+  private ObjectToMap() {}
 
   public static <T> Map<String, Value> convert(T property) {
     var map = new HashMap<String, Value>();
@@ -28,8 +27,7 @@ public final class ObjectToMap {
         var name = f.getName();
         try {
           map.put(name, value(value));
-        }
-        catch (ClientException e) {
+        } catch (ClientException e) {
           map.put(name, value(convert(value)));
         }
       }

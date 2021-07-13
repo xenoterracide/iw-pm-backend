@@ -20,10 +20,7 @@ class OIDCTestController {
 
   @GetMapping
   @NonNull
-  String index(
-    @Nullable
-      Authentication details
-  ) {
+  String index(@Nullable Authentication details) {
     log.info("{}", details);
     var name = details != null ? details.getName() : "world";
     return "Hello, " + name;

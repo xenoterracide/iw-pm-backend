@@ -10,5 +10,4 @@ import org.springframework.test.context.ActiveProfiles;
 
 @ActiveProfiles("test")
 @SpringBootApplication
-public class TestApplication {
-}
+public class TestApplication {}

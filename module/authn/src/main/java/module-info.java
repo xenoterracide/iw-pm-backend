@@ -1,2 +1,1 @@
-module ppm.authn {
-}
+module ppm.authn {}
