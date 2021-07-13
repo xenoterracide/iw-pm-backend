@@ -7,7 +7,7 @@ version = "0.1.0-SNAPSHOT"
 
 plugins {
   id("ppm.java-library")
-  id("org.springframework.boot")
+  id("org.springframework.boot").version("2.+")
   id("com.gorylenko.gradle-git-properties").version("2.2.4")
 }
 
