@@ -12,7 +12,7 @@ spotless {
   ratchetFrom = if (isCI) "HEAD~1" else "HEAD"
 
   java {
-    // removeUnusedImports()
+    removeUnusedImports()
     // importOrder()
     licenseHeader(
       String.format(
