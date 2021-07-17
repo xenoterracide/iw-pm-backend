@@ -8,14 +8,18 @@ package com.xenoterracide.ppm.util.modelgraph.reflect;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.neo4j.driver.Values.value;
 
+import java.util.Map;
 import org.junit.jupiter.api.Test;
 
-class ObjectToMapTest {
+class MapToObjectTest {
 
   @Test
   void convert() {
     var aString = "hello";
-    var map = ObjectToMap.convert(new TestComposite(aString));
-    assertThat(map).containsEntry("aString", value(aString));
+    var entity = MapToObject.convert(
+      TestComposite.class,
+      Map.of("aString", value(aString))
+    );
+    assertThat(entity.getaString()).isEqualTo(aString);
   }
 }

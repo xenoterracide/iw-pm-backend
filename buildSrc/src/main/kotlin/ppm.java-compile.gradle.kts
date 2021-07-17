@@ -207,7 +207,8 @@ tasks.withType<JavaCompile>().configureEach {
       "Var"
     )
 
-    if (!providers.systemProperty("idea.active").forUseAtConfigurationTime().isPresent) {
+    val inIdea = providers.systemProperty("idea.active").forUseAtConfigurationTime().map { it.toBoolean() }
+    if (!inIdea.getOrElse(false)) {
       errors.addAll(
         listOf(
           "UnusedVariable",

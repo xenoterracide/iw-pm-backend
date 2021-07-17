@@ -12,8 +12,6 @@ repositories {
 val libs = the<LibrariesForLibs>()
 
 dependencies {
-  implementation(platform(libs.spring.platform))
-  testFixturesImplementation(platform(libs.spring.platform))
   runtimeOnly(libs.spring.boot.starter.log4j2)
   implementation(libs.log4j.api)
   testImplementation(libs.bundles.test)

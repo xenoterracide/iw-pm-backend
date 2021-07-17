@@ -5,8 +5,6 @@
  */
 package com.xenoterracide.ppm.util.model;
 
-import java.util.UUID;
-
-public interface Identifiable {
-  UUID getId();
+public interface Identifiable<ID> {
+  ID getId();
 }

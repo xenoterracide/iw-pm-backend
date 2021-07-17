@@ -26,10 +26,13 @@ jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-d
 jackson-module-parameter-names = { module = "com.fasterxml.jackson.module:jackson-module-parameter-names" }
 javax-annotation = { module = "jakarta.annotation:jakarta.annotation-api" }
 jsr305 = "com.google.code.findbugs:jsr305:3.+"
+junit-api = { module = "org.junit.jupiter:junit-jupiter-api" }
 junit-parameters = { module = "org.junit.jupiter:junit-jupiter-params" }
 junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine" }
 log4j-api = { module = "org.apache.logging.log4j:log4j-api" }
 mockito = { module = "org.mockito:mockito-core" }
+neo4j-driver = { module = "org.neo4j.driver:neo4j-java-driver" }
+neo4j-test = { module = "org.neo4j.test:neo4j-harness" }
 pebble = "io.pebbletemplates:pebble:3.+"
 picocli-core = { module = "info.picocli:picocli", version.ref = "picocli" }
 picocli-starter = { module = "info.picocli:picocli-spring-boot-starter", version.ref = "picocli" }
@@ -37,6 +40,7 @@ plugin-errorprone = "net.ltgt.gradle:gradle-errorprone-plugin:2.+"
 plugin-gradle-v = "com.github.ben-manes:gradle-versions-plugin:0.+"
 plugin-spotbugs = "gradle.plugin.com.github.spotbugs.snom:spotbugs-gradle-plugin:4.+"
 plugin-spotless = "com.diffplug.spotless:spotless-plugin-gradle:5.+"
+slf4j-nop = { module = "org.slf4j:slf4j-nop" }
 spotbugs = "com.github.spotbugs:spotbugs:4.+"
 spring-platform = "org.springframework.boot:spring-boot-starter-parent:2.+"
 spring-context = { module = "org.springframework:spring-context" }

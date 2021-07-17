@@ -23,7 +23,7 @@ public abstract class AbstractMapToObjectConverter<T>
   }
 
   @Override
-  public Map<String, Value> decompose(
+  public @NonNull Map<String, Value> decompose(
     @NonNull Object property,
     @NonNull Neo4jConversionService neo4jConversionService
   ) {
@@ -31,7 +31,7 @@ public abstract class AbstractMapToObjectConverter<T>
   }
 
   @Override
-  public T compose(
+  public @NonNull T compose(
     @NonNull Map<String, Value> source,
     @NonNull Neo4jConversionService neo4jConversionService
   ) {
