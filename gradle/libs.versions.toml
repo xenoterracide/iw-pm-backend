@@ -10,6 +10,7 @@ assertj = { module = "org.assertj:assertj-core" }
 bndlib = "biz.aQute.bnd:bndlib:2.+"
 checker-annotations = { module = "org.checkerframework:checker-qual", version.ref = "checker" }
 checker-core = { module = "org.checkerframework:checker", version.ref = "checker" }
+checkstyle = "com.puppycrawl.tools:checkstyle:8.+"
 commons-io = "commons-io:commons-io:2.+"
 commons-lang = { module = "org.apache.commons:commons-lang3" }
 dgs-platform = "com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:4.+"

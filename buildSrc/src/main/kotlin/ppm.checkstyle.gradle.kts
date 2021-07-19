@@ -1,6 +1,14 @@
+import org.gradle.accessors.dm.LibrariesForLibs
+
 plugins {
   `java-test-fixtures`
   checkstyle
+}
+
+val libs = the<LibrariesForLibs>()
+
+dependencies {
+  checkstyle(libs.checkstyle)
 }
 
 tasks.withType<Checkstyle>().configureEach {
