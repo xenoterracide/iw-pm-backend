@@ -9,12 +9,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import com.xenoterracide.ppm.util.modelgraph.reflect.TestComposite;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.data.neo4j.DataNeo4jTest;
 
 @DataNeo4jTest
-@ExtendWith(Neo4jExtension.class)
 class AbstractMapToObjectConverterTest {
 
   private final TestNodeRepository repository;

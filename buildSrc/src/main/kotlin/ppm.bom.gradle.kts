@@ -19,18 +19,6 @@ configurations.configureEach {
   exclude(group = "org.slf4j", module = "slf4j-nop")
 
   resolutionStrategy {
-    eachDependency {
-      if (this@configureEach.name == libs.neo4j.test.get().module.name) {
-        val artifact = project.configurations
-          .getByName("runtimeClasspath")
-          .resolvedConfiguration
-          .resolvedArtifacts
-          .find { it.name == libs.neo4j.driver.get().module.name }
-
-        useVersion(artifact!!.moduleVersion.id.version)
-        because("align with spring bom")
-      }
-    }
     componentSelection {
       all {
         if (!this@configureEach.name.matches(Regex("^spotbugs.*"))) {

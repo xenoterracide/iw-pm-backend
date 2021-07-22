@@ -33,7 +33,7 @@ junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine" }
 log4j-api = { module = "org.apache.logging.log4j:log4j-api" }
 mockito = { module = "org.mockito:mockito-core" }
 neo4j-driver = { module = "org.neo4j.driver:neo4j-java-driver" }
-neo4j-test = { module = "org.neo4j.test:neo4j-harness" }
+neo4j-test = "org.neo4j.test:neo4j-harness:4.2.0"
 pebble = "io.pebbletemplates:pebble:3.+"
 picocli-core = { module = "info.picocli:picocli", version.ref = "picocli" }
 picocli-starter = { module = "info.picocli:picocli-spring-boot-starter", version.ref = "picocli" }
@@ -73,4 +73,4 @@ compile-annotations = ["errorprone-annotations", "checker-annotations"]
 ep = ["errorprone-core", "errorprone-nullaway"]
 jackson-config = ["jackson-core", "jackson-module-parameter-names"]
 test = ["assertj", "junit-parameters"]
-spring-test = ["spring-test", "spring-boot-test-core", "spring-boot-test-autoconfigure"]
+spring-test = ["spring-test", "spring-boot-test-core", "spring-boot-autoconfigure", "spring-boot-test-autoconfigure"]
