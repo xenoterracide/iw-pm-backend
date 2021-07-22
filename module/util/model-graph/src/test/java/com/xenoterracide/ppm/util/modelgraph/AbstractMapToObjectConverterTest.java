@@ -25,9 +25,6 @@ class AbstractMapToObjectConverterTest {
   }
 
   @Test
-  void decompose() {}
-
-  @Test
   void compose() {
     var aString = "hello";
     var saved = repository.save(new TestNode(new TestComposite(aString)));
