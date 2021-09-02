@@ -17,4 +17,9 @@ class ApplicationTest {
   void healthCheck(@Autowired WebTestClient webClient) {
     webClient.get().uri("/actuator/health").exchange().expectStatus().isOk();
   }
+
+  @Test
+  void main() {
+    Application.main(new String[] {});
+  }
 }
