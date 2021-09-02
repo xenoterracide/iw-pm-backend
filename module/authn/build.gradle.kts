@@ -16,5 +16,6 @@ dependencies {
   testImplementation(libs.spring.boot.starter.web)
   testImplementation(libs.spring.boot.starter.webflux)
   testImplementation(libs.spring.security.core)
+  testImplementation(libs.spring.security.oauth2.authorization.server)
   testCompileOnly(libs.javax.annotation)
 }

@@ -49,6 +49,8 @@ spring-core = { module = "org.springframework:spring-core" }
 spring-beans = { module = "org.springframework:spring-beans" }
 spring-test = { module = "org.springframework:spring-test" }
 spring-security-core = { module = "org.springframework.security:spring-security-core" }
+spring-security-oauth2-core = { module = "org.springframework.security:spring-security-oauth2" }
+spring-security-oauth2-authorization-server = "org.springframework.security.experimental:spring-security-oauth2-authorization-server:0.1.1"
 spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }
 spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure" }
 spring-boot-starter-core = { module = "org.springframework.boot:spring-boot-starter" }
