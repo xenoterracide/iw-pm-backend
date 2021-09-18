@@ -6,6 +6,8 @@
 package com.xenoterracide.ppm.util.modelgraph;
 
 import com.xenoterracide.ppm.util.modelgraph.reflect.TestComposite;
+import java.util.UUID;
+import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.data.neo4j.core.schema.CompositeProperty;
 import org.springframework.data.neo4j.core.schema.Node;
 
@@ -16,6 +18,12 @@ public class TestNode extends AbstractGraphEntity {
   private final TestComposite testComposite;
 
   public TestNode(TestComposite testComposite) {
+    this.testComposite = testComposite;
+  }
+
+  @PersistenceConstructor
+  TestNode(TestComposite testComposite, UUID id) {
+    super(id);
     this.testComposite = testComposite;
   }
 

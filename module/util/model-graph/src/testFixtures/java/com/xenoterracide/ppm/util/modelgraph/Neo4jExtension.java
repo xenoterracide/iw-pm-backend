@@ -18,14 +18,14 @@ class Neo4jExtension implements BeforeAllCallback, AfterAllCallback {
   private Neo4j neo4j;
 
   @Override
-  public void afterAll(ExtensionContext context) throws Exception {
+  public void afterAll(ExtensionContext context) {
     if (neo4j != null) {
       neo4j.close();
     }
   }
 
   @Override
-  public void beforeAll(ExtensionContext context) throws Exception {
+  public void beforeAll(ExtensionContext context) {
     neo4j = Neo4jBuilders.newInProcessBuilder().withDisabledServer().build();
 
     System.setProperty("spring.neo4j.uri", this.neo4j.boltURI().toString());

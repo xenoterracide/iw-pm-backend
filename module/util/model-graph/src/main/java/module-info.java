@@ -10,6 +10,7 @@ module ppm.util.modelgraph {
   requires io.vavr;
   requires static org.apiguardian.api;
   requires static org.checkerframework.checker.qual;
+  requires org.apache.commons.lang3;
   opens com.xenoterracide.ppm.util.modelgraph to spring.core;
   exports com.xenoterracide.ppm.util.modelgraph ;
 }

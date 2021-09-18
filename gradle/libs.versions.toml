@@ -15,6 +15,7 @@ commons-io = "commons-io:commons-io:2.+"
 commons-lang = { module = "org.apache.commons:commons-lang3" }
 dgs-platform = "com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:4.+"
 dgs-starter = { module = "com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter" }
+equalsverifier = "nl.jqno.equalsverifier:equalsverifier:3.+"
 errorprone-annotations = { module = "com.google.errorprone:error_prone_annotations", version.ref = "ep" }
 errorprone-core = { module = "com.google.errorprone:error_prone_core", version.ref = "ep" }
 errorprone-nullaway = "com.uber.nullaway:nullaway:0.+"

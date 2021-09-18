@@ -22,9 +22,18 @@ class AbstractMapToObjectConverterTest {
   }
 
   @Test
-  void compose() {
+  void decompose() {
     var aString = "hello";
     var saved = repository.save(new TestNode(new TestComposite(aString)));
     assertThat(saved.getTestComposite().getaString()).isEqualTo(aString);
+  }
+
+  @Test
+  void compose() {
+    var aString = "goodbye";
+    var node = new TestNode(new TestComposite(aString));
+    repository.save(node);
+    var opt = repository.findById(node.getId());
+    assertThat(opt).isPresent();
   }
 }
