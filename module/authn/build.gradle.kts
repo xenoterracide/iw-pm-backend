@@ -7,6 +7,14 @@ plugins {
   id("ppm.spotless")
 }
 
+tasks.withType<Test> {
+  enabled = false
+}
+
+tasks.withType<JacocoCoverageVerification> {
+  enabled = false
+}
+
 dependencies {
   testRuntimeOnly(projects.util.test)
   runtimeOnly(libs.spring.boot.starter.security)

@@ -6,6 +6,7 @@ plugins {
   id("ppm.checkstyle")
   id("ppm.spotbugs")
   id("ppm.spotless")
+  id("ppm.coverage")
 }
 
 dependencies {

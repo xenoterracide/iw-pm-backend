@@ -53,7 +53,6 @@ tasks.withType<JavaCompile>().configureEach {
       "AssertEqualsArgumentOrderChecker",
       "AssertThrowsMultipleStatements",
       "AssertionFailureIgnored",
-      "AssignmentToMock",
       "BadComparable",
       "BadImport",
       "BadInstanceof",

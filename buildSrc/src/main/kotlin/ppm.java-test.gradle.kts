@@ -1,3 +1,4 @@
+
 import org.gradle.accessors.dm.LibrariesForLibs
 import org.gradle.api.tasks.testing.logging.TestLogEvent
 
@@ -32,4 +33,19 @@ tasks.test {
     html.required.set(false)
     junitXml.required.set(false)
   }
+
+
+
+  afterSuite(
+    KotlinClosure2<TestDescriptor, TestResult, Unit>(
+      { descriptor, result ->
+        if (descriptor.parent == null) {
+          logger.lifecycle("Tests run: ${result.testCount}, Failures: ${result.failedTestCount}, Skipped: ${result.skippedTestCount}")
+          if ( result.testCount == 0L ) {
+            throw IllegalStateException("You cannot have 0 tests");
+          }
+        }
+        Unit
+      })
+  )
 }
