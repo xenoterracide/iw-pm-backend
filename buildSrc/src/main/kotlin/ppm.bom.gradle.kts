@@ -25,6 +25,11 @@ configurations.configureEach {
           val nonRelease = Regex("^[\\d.]+-(M|ea|beta).*$")
           if (candidate.version.matches(nonRelease)) reject("no pre-release")
         }
+
+        if (!this@configureEach.name.matches(Regex("^nullaway$"))) {
+          val reason = "crash https://github.com/uber/NullAway/issues/533"
+          if (candidate.version.matches(Regex("^0\\.9\\.[34]$"))) reject(reason)
+        }
       }
     }
   }

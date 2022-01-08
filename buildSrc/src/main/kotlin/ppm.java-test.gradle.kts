@@ -34,8 +34,6 @@ tasks.test {
     junitXml.required.set(false)
   }
 
-
-
   afterSuite(
     KotlinClosure2<TestDescriptor, TestResult, Unit>(
       { descriptor, result ->
