@@ -181,7 +181,6 @@ tasks.withType<JavaCompile>().configureEach {
       "LongLiteralLowerCaseSuffix",
       "NumericEquality",
       "StaticQualifiedUsingExpression",
-      "AnnotationPosition",
       "AssertFalse",
       "CheckedExceptionNotThrown",
       "EmptyTopLevelDeclaration",
