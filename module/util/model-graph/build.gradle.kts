@@ -16,7 +16,9 @@ dependencies {
   testFixturesRuntimeOnly(libs.spring.data.neo4j)
   testFixturesImplementation(libs.spring.context)
   testFixturesImplementation(libs.neo4j.driver)
-  testFixturesImplementation(libs.neo4j.test)
+  testFixturesImplementation(libs.neo4j.test) {
+    exclude( group = "org.junit.vintage", module = "junit-vintage-engine")
+  }
   testFixturesImplementation(libs.bundles.spring.test)
   testRuntimeOnly(projects.util.test)
   testImplementation(testFixtures(projects.util.modelGraph))
