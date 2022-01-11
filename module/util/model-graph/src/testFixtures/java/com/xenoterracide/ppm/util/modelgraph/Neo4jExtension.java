@@ -28,11 +28,11 @@ class Neo4jExtension implements BeforeAllCallback, AfterAllCallback {
     neo4j = new Neo4jContainer<>("neo4j:latest");
     neo4j.start();
 
-    System.setProperty("spring.neo4j.uri", this.neo4j.getBoltUrl());
+    System.setProperty("spring.neo4j.uri", neo4j.getBoltUrl());
     System.setProperty("spring.neo4j.authentication.username", "neo4j");
     System.setProperty(
       "spring.neo4j.authentication.password",
-      this.neo4j.getAdminPassword()
+      neo4j.getAdminPassword()
     );
   }
 }
