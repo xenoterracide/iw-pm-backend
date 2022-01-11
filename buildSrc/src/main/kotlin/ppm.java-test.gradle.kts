@@ -20,8 +20,9 @@ dependencies {
 }
 
 val available = tasks.register("tests available") {
+  val ss = sourceSets;
   doLast {
-    project.sourceSets.getByName("test") {
+    ss.getByName("test") {
       if (java.isEmpty) throw FileNotFoundException("no tests found")
     }
   }

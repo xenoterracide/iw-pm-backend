@@ -23,5 +23,5 @@ tasks.withType<SpotBugsTask>().configureEach {
 }
 
 dependencies {
-  spotbugs("com.github.spotbugs:spotbugs:4.+")
+  spotbugs("com.github.spotbugs:spotbugs:4.5.3")
 }
