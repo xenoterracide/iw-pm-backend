@@ -9,13 +9,12 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 import org.junit.jupiter.api.extension.AfterAllCallback;
 import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
-import org.neo4j.harness.Neo4j;
-import org.neo4j.harness.Neo4jBuilders;
+import org.testcontainers.containers.Neo4jContainer;
 
 class Neo4jExtension implements BeforeAllCallback, AfterAllCallback {
 
   @Nullable
-  private Neo4j neo4j;
+  private Neo4jContainer<?> neo4j;
 
   @Override
   public void afterAll(ExtensionContext context) {
@@ -26,9 +25,14 @@ class Neo4jExtension implements BeforeAllCallback, AfterAllCallback {
 
   @Override
   public void beforeAll(ExtensionContext context) {
-    neo4j = Neo4jBuilders.newInProcessBuilder().withDisabledServer().build();
+    neo4j = new Neo4jContainer<>("neo4j:latest");
+    neo4j.start();
 
-    System.setProperty("spring.neo4j.uri", this.neo4j.boltURI().toString());
+    System.setProperty("spring.neo4j.uri", this.neo4j.getBoltUrl());
     System.setProperty("spring.neo4j.authentication.username", "neo4j");
+    System.setProperty(
+      "spring.neo4j.authentication.password",
+      this.neo4j.getAdminPassword()
+    );
   }
 }

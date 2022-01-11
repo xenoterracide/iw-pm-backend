@@ -34,7 +34,8 @@ junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine" }
 log4j-api = { module = "org.apache.logging.log4j:log4j-api" }
 mockito = { module = "org.mockito:mockito-core" }
 neo4j-driver = { module = "org.neo4j.driver:neo4j-java-driver" }
-neo4j-test = "org.neo4j.test:neo4j-harness:4.3.0"
+neo4j-test = "org.neo4j.test:neo4j-harness:4.4.+"
+neo4j-testcontainers = "org.testcontainers:neo4j:1.+"
 pebble = "io.pebbletemplates:pebble:3.+"
 picocli-core = { module = "info.picocli:picocli", version.ref = "picocli" }
 picocli-starter = { module = "info.picocli:picocli-spring-boot-starter", version.ref = "picocli" }
@@ -67,6 +68,7 @@ spring-boot-test-autoconfigure = { module = "org.springframework.boot:spring-boo
 spring-boot-devtools = { module = "org.springframework.boot:spring-boot-devtools" }
 spring-data-commons = { module = "org.springframework.data:spring-data-commons" }
 spring-data-neo4j = { module = "org.springframework.data:spring-data-neo4j" }
+testcontainers = "org.testcontainers:junit-jupiter:1.+"
 tika = "org.apache.tika:tika-core:1.+"
 uuid-creator = "com.github.f4b6a3:uuid-creator:3.+"
 vavr = "io.vavr:vavr:0.+"
