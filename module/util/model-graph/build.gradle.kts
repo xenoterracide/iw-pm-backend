@@ -16,9 +16,7 @@ dependencies {
   testFixturesRuntimeOnly(libs.spring.data.neo4j)
   testFixturesImplementation(libs.spring.context)
   testFixturesImplementation(libs.neo4j.driver)
-  testFixturesImplementation(libs.neo4j.testcontainers) {
-    exclude(group = "junit", module = "junit")
-  }
+  testFixturesImplementation(libs.neo4j.testcontainers)
   testFixturesImplementation(libs.testcontainers)
   /*
   testFixturesImplementation(libs.neo4j.test) {

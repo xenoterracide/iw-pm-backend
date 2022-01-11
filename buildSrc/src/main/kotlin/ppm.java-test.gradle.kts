@@ -1,6 +1,6 @@
-
 import org.gradle.accessors.dm.LibrariesForLibs
 import org.gradle.api.tasks.testing.logging.TestLogEvent
+import java.io.FileNotFoundException
 
 plugins {
   `java-library`
@@ -19,7 +19,15 @@ dependencies {
   testRuntimeOnly(libs.junit.engine)
 }
 
-tasks.test {
+val available = tasks.register("tests available") {
+  doLast {
+    project.sourceSets.getByName("test") {
+      if (java.isEmpty) throw FileNotFoundException("no tests found")
+    }
+  }
+}
+
+tasks.test.configure {
   useJUnitPlatform()
 
   testLogging {
@@ -33,15 +41,15 @@ tasks.test {
     html.required.set(false)
     junitXml.required.set(false)
   }
+  inputs.dir(rootProject.file("buildSrc/src/main"))
+  finalizedBy(available)
 
   afterSuite(
     KotlinClosure2<TestDescriptor, TestResult, Unit>(
       { descriptor, result ->
         if (descriptor.parent == null) {
           logger.lifecycle("Tests run: ${result.testCount}, Failures: ${result.failedTestCount}, Skipped: ${result.skippedTestCount}")
-          if ( result.testCount == 0L ) {
-            throw IllegalStateException("You cannot have 0 tests");
-          }
+          if (result.testCount == 0L) throw IllegalStateException("You cannot have 0 tests");
         }
         Unit
       })

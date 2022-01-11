@@ -41,8 +41,8 @@ picocli-core = { module = "info.picocli:picocli", version.ref = "picocli" }
 picocli-starter = { module = "info.picocli:picocli-spring-boot-starter", version.ref = "picocli" }
 plugin-errorprone = "net.ltgt.gradle:gradle-errorprone-plugin:2.+"
 plugin-gradle-v = "com.github.ben-manes:gradle-versions-plugin:0.+"
-plugin-spotbugs = "gradle.plugin.com.github.spotbugs.snom:spotbugs-gradle-plugin:4.+"
-plugin-spotless = "com.diffplug.spotless:spotless-plugin-gradle:5.+"
+plugin-spotbugs = "com.github.spotbugs.snom:spotbugs-gradle-plugin:5.+"
+plugin-spotless = "com.diffplug.spotless:spotless-plugin-gradle:6.+"
 slf4j-nop = { module = "org.slf4j:slf4j-nop" }
 spotbugs = "com.github.spotbugs:spotbugs:4.+"
 spring-platform = "org.springframework.boot:spring-boot-starter-parent:2.+"

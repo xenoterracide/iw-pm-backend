@@ -1,5 +1,5 @@
 /*
- * Copyright © 2021 Caleb Cushing.
+ * Copyright © 2021-2022 Caleb Cushing.
  * Apache 2.0. See https://github.com/xenoterracide/brix/LICENSE
  * https://choosealicense.com/licenses/apache-2.0/#
  */
@@ -13,24 +13,29 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
+import org.springframework.data.annotation.Version;
 
 public abstract class AbstractGraphEntity implements Identifiable<UUID> {
 
   @Id
   private final UUID id;
 
+  @Version
+  private final Long version;
+
   public AbstractGraphEntity() {
-    this(UuidCreator.getTimeOrderedWithHash());
+    this(UuidCreator.getTimeOrderedWithHash(), 0);
   }
 
   @PersistenceConstructor
-  AbstractGraphEntity(UUID id) {
+  AbstractGraphEntity(UUID id, long version) {
     this.id = id;
+    this.version = version;
   }
 
   @Override
   public final int hashCode() {
-    return Objects.hashCode(this.getId());
+    return Objects.hash(this.getId(), this.version);
   }
 
   @Override
@@ -39,11 +44,14 @@ public abstract class AbstractGraphEntity implements Identifiable<UUID> {
   }
 
   @Override
-  public final boolean equals(Object obj) {
-    if (!(obj instanceof AbstractGraphEntity)) {
+  public final boolean equals(Object that) {
+    if (!(that instanceof AbstractGraphEntity)) {
       return false;
     }
-    return Objects.equals(getId(), ((AbstractGraphEntity) obj).getId());
+    return (
+      Objects.equals(this.getId(), ((AbstractGraphEntity) that).getId()) &&
+      Objects.equals(this.version, ((AbstractGraphEntity) that).version)
+    );
   }
 
   @Override
